@@ -37,105 +37,42 @@
                 <%--Site Scripts--%>
             </Scripts>
         </asp:ScriptManager>
-        <div class="row">
-            <div class="navbar navbar-inverse navbar-fixed-top">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <a class="navbar-brand" href="Home.aspx.aspx">
-                            <img alt="Brand" src="Images/Night Landscape-35.png" />
-                            Team 11
-                        </a>
-                    </div>
-                    <div class="collapse navbar-collapse ">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li style="margin-top: 9px;"><a href="#">Welcome </a></li>
-                            <li style="margin-top: 9px;"><a href="#">Profile</a></li>
-                            <li style="margin-top: 9px;"><a href="#">Logout</a></li>
-                        </ul>
-                    </div>
+       <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" runat="server" href="~/">Application name</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a runat="server" href="~/">Home</a></li>
+                        <li><a runat="server" href="~/About">About</a></li>
+                        <li><a runat="server" href="~/Contact">Contact</a></li>
+                    </ul>
+                    <asp:LoginView runat="server" ViewStateMode="Disabled">
+                        <AnonymousTemplate>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a runat="server" href="~/Account/Register">Register</a></li>
+                                <li><a runat="server" href="~/Account/Login">Log in</a></li>
+                            </ul>
+                        </AnonymousTemplate>
+                        <LoggedInTemplate>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a runat="server" href="~/Account/Manage" title="Manage your account">Hello, <%: Context.User.Identity.GetUserName()  %> !</a></li>
+                                <li>
+                                    <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
+                                </li>
+                            </ul>
+                        </LoggedInTemplate>
+                    </asp:LoginView>
                 </div>
             </div>
         </div>
-        <div class="row" style="margin-top: 10px;">
-          
-                <div class="col-md-9 col-md-offset-3 jumbotron">
-
-                    <div class="col-md-11 col-md-offset-1">
-                        <div class="col-md-2">
-                            <label class="h6">Property Type</label>
-                            <div class="Landed">
-                                <button class="btn btn-default dropdown-toggle" type="button" id="Landed" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                    Landed
-                        <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="Landed">
-                                    <li><a href="#">Action</a></li>
-                                    <li><a href="#">Another action</a></li>
-                                    <li><a href="#">Something else here</a></li>
-                                    <li role="separator" class="divider"></li>
-                                    <li><a href="#">Separated link</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <label class="h5">Minimum Price</label>
-                            <div class="Price">
-                                <button class="btn btn-default dropdown-toggle" type="button" id="Price" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                    Any Price
-                        <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="Price">
-                                    <li><a href="#">Action</a></li>
-                                    <li><a href="#">Another action</a></li>
-                                    <li><a href="#">Something else here</a></li>
-                                    <li role="separator" class="divider"></li>
-                                    <li><a href="#">Separated link</a></li>
-                                </ul>
-                            </div>
-
-                        </div>
-                        <div class="col-md-2">
-                            <label class="h6">Maximun Price</label>
-                            <div class="AnyPrice">
-                                <button class="btn btn-default dropdown-toggle" type="button" id="AnyPrice" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                    Any Price
-                        <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="AnyPrice">
-                                    <li><a href="#">Action</a></li>
-                                    <li><a href="#">Another action</a></li>
-                                    <li><a href="#">Something else here</a></li>
-                                    <li role="separator" class="divider"></li>
-                                    <li><a href="#">Separated link</a></li>
-                                </ul>
-                            </div>
-
-                        </div>
-                        <div class="col-md-2">
-                            <label class="h6">Rooms</label>
-                            <div class="AnyPrice">
-                                <button class="btn btn-default dropdown-toggle" type="button" id="Rooms" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                    All
-                        <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="Room">
-                                    <li><a href="#">Action</a></li>
-                                    <li><a href="#">Another action</a></li>
-                                    <li><a href="#">Something else here</a></li>
-                                    <li role="separator" class="divider"></li>
-                                    <li><a href="#">Separated link</a></li>
-                                </ul>
-                            </div>
-
-                        </div>
-
-                        <div class="col-md-2" style="padding-top: 45px;">
-                            <input type="button" class="btn btn-success" value="Search" id="Search" />
-                        </div>
-                    </div>
-                </div>
-            
-        </div>
+        
 
 
 

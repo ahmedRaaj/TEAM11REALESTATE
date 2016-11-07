@@ -179,6 +179,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Account\Web.config" />
+    <Content Include="MainPage.Master" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Home.aspx" />
     <Content Include="Images\Night Landscape-35.png" />
@@ -370,6 +371,13 @@
     <Compile Include="Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
+    <Compile Include="MainPage.Master.cs">
+      <DependentUpon>MainPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MainPage.Master.designer.cs">
+      <DependentUpon>MainPage.Master</DependentUpon>
+    </Compile>
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
@@ -385,6 +393,12 @@
     </Compile>
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site1.MainPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.MainPage.designer.cs">
+      <DependentUpon>Site1.MainPage.cs</DependentUpon>
     </Compile>
     <Compile Include="Startup.cs" />
     <Compile Include="ViewSwitcher.ascx.cs">
