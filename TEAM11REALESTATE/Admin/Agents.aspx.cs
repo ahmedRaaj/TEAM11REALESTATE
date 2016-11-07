@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using TEAM11REALESTATE.Models;
 
 namespace TEAM11REALESTATE.Admin
 {
@@ -11,7 +12,9 @@ namespace TEAM11REALESTATE.Admin
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            RealEstateModel ctx = new RealEstateModel();
+            GridViewAgents.DataSource = ctx.Properties.ToList();
+            GridViewAgents.DataBind();
         }
     }
 }
