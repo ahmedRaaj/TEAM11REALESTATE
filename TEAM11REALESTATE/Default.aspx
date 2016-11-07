@@ -3,9 +3,42 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
     <div class="jumbotron">
-        <h1>&nbsp;</h1>
-        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
-        <p><a href="http://www.asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+      <table class="table">
+               <tr style="border:none">
+                   <td><span class="FilterTypeName" style="text-align: center;border:none;font-weight:bold">Property Type</span></td>
+                   <td><span class="FilterTypeName" style="text-align: center;border:none;font-weight:bold">Minimum Price</span></td>
+                   <td><span class="FilterTypeName" style="text-align: center;border:none;font-weight:bold">Maximum Price</span></td>
+                   <td><span class="FilterTypeName" style="text-align: center;border:none;font-weight:bold">Rooms</span></td>
+                   <td rowspan="2">
+                       <button type="button" class="btn btn-primary">SEARCH</button>
+                   </td>
+               </tr>
+
+
+          <tr style="border:none">
+               <td>
+                   <select class="select">
+                       <option>{PlaceHolder}</option>
+                   </select>
+               </td>
+                 <td>
+                   <select class="select">
+                       <option>{PlaceHolder}</option>
+                   </select>
+               </td>
+                 <td>
+                   <select class="select">
+                       <option>{PlaceHolder}</option>
+                   </select>
+               </td>
+                 <td>
+                   <select class="select">
+                       <option>{PlaceHolder}</option>
+                   </select>
+               </td>
+               
+           </tr>
+       </table>
     </div>
 
     <div class="row">
