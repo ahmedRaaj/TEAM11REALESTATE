@@ -172,6 +172,9 @@
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
+    <Content Include="Admin\Agents.aspx" />
+    <Content Include="Admin\Properties.aspx" />
+    <Content Include="Admin\Sellers.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -336,6 +339,27 @@
     </Compile>
     <Compile Include="Account\VerifyPhoneNumber.aspx.designer.cs">
       <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Agents.aspx.cs">
+      <DependentUpon>Agents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Agents.aspx.designer.cs">
+      <DependentUpon>Agents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Properties.aspx.cs">
+      <DependentUpon>Properties.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Properties.aspx.designer.cs">
+      <DependentUpon>Properties.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Sellers.aspx.cs">
+      <DependentUpon>Sellers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Sellers.aspx.designer.cs">
+      <DependentUpon>Sellers.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
