@@ -12,11 +12,7 @@ namespace TEAM11REALESTATE
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Address a = new Address();
-            RealEstateModel ct = new RealEstateModel();
-            a.Email = "fjfj";
-            ct.Addresses.Add(a);
-            ct.SaveChanges();
+          
         }
     }
 }
