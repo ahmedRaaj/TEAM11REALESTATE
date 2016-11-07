@@ -4,15 +4,14 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using TEAM11REALESTATE.Models;
 
-namespace TEAM11REALESTATE
+namespace TEAM11REALESTATE.Admin
 {
-    public partial class _Default : Page
+    public partial class Sellers : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-          
+
         }
     }
 }
