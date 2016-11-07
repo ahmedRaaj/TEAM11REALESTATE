@@ -17,9 +17,9 @@
 
           <tr style="border:none">
                <td>
-                   <select class="select">
-                       <option>{PlaceHolder}</option>
-                   </select>
+                   <asp:DropDownList class="select" runat="server" ID="DDPropertyType" ItemType="TEAM11REALESTATE.Models.PropertyType" DataMember="PropertyTypeID" DataValueField="TypeName" SelectMethod="GetPropertyTypes">
+                       
+                   </asp:DropDownList>
                </td>
                  <td>
                    <select class="select">

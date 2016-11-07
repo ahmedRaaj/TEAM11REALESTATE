@@ -12,7 +12,9 @@ namespace TEAM11REALESTATE
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-          
+            //RealEstateModel ct = new RealEstateModel();
+            //LBPropertyType.DataSource = ct.PropertyTypes;
+            //LBPropertyType.DataBind();
         }
 
         // The return type can be changed to IEnumerable, however to support
@@ -28,6 +30,15 @@ namespace TEAM11REALESTATE
           
                q = ct.Properties;
            
+            return q;
+        }
+
+        public IQueryable<PropertyType> GetPropertyTypes()
+        {
+            RealEstateModel ct = new RealEstateModel();
+            IQueryable<PropertyType> q;
+            q = ct.PropertyTypes;
+
             return q;
         }
     }
