@@ -14,5 +14,21 @@ namespace TEAM11REALESTATE
         {
           
         }
+
+        // The return type can be changed to IEnumerable, however to support
+        // paging and sorting, the following parameters must be added:
+        //     int maximumRows
+        //     int startRowIndex
+        //     out int totalRowCount
+        //     string sortByExpression
+        public IQueryable<TEAM11REALESTATE.Models.Property> GetProperties()
+        {
+            IQueryable<Property> q;
+            RealEstateModel ct = new RealEstateModel();
+          
+               q = ct.Properties;
+           
+            return q;
+        }
     }
 }
