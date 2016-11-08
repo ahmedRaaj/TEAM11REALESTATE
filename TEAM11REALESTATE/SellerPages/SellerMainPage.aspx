@@ -16,10 +16,10 @@
 where s.AddressID=a.AddressID"></asp:SqlDataSource>
     <br />
     <br />
-    <asp:Button ID="btnAdd" runat="server" Text="Add" PostBackUrl="~/SellerPages/SellerAddPage.aspx" Width="70px" />
+    <asp:Button ID="btnAdd" runat="server" Text="Add" PostBackUrl="~/SellerPages/SellerAddPage.aspx" Width="100px" Height="40px" />
 &nbsp;&nbsp;&nbsp;&nbsp;
-    <asp:Button ID="btnEdit" runat="server" Text="Edit" PostBackUrl="~/SellerPages/SellerEditPage.aspx" Width="70px" />
+    <asp:Button ID="btnEdit" runat="server" Text="Edit" PostBackUrl="~/SellerPages/SellerEditPage.aspx" Width="100px" Height="40px" />
 &nbsp;&nbsp;&nbsp;&nbsp;
-    <asp:Button ID="btnDelete" runat="server" Text="Delete" PostBackUrl="~/SellerPages/SellerDeletePage.aspx" Width="70px" />
+    <asp:Button ID="btnDelete" runat="server" Text="Delete" PostBackUrl="~/SellerPages/SellerDeletePage.aspx" Width="100px" Height="40px" />
     <br />
 </asp:Content>
