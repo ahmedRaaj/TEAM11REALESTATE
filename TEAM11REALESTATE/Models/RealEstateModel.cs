@@ -20,6 +20,7 @@ namespace TEAM11REALESTATE.Models
         public virtual DbSet<Property> Properties { get; set; }
         public virtual DbSet<PropertyType> PropertyTypes { get; set; }
         public virtual DbSet<Seller> Sellers { get; set; }
+        public virtual DbSet<PropertyImage> PropertyImages { get; set; }
         public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
