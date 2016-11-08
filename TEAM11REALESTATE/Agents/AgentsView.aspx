@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AgentsView.aspx.cs" Inherits="TEAM11REALESTATE.Agents.AgentsView" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" AutoGenerateEditButton="True" DataKeyNames="AgentID" DataSourceID="SqlDataSource1" >
+    /<asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" AutoGenerateEditButton="True" DataKeyNames="AgentID" DataSourceID="SqlDataSource1" >
         <Columns>
             <asp:BoundField DataField="AgentID" HeaderText="AgentID" InsertVisible="False" ReadOnly="True" SortExpression="AgentID" />
             <asp:BoundField DataField="CEANumber" HeaderText="CEANumber" SortExpression="CEANumber" />
