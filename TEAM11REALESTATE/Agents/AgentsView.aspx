@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AgentsView.aspx.cs" Inherits="TEAM11REALESTATE.Agents.AgentsView" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    /<asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" AutoGenerateEditButton="True" DataKeyNames="AgentID" DataSourceID="SqlDataSource1" >
+<h3 style="text-align:center">MANAGE AGENTS</h3>
+    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" AutoGenerateEditButton="True" DataKeyNames="AgentID" DataSourceID="SqlDataSource1" Width="722px" >
         <Columns>
             <asp:BoundField DataField="AgentID" HeaderText="AgentID" InsertVisible="False" ReadOnly="True" SortExpression="AgentID" />
             <asp:BoundField DataField="CEANumber" HeaderText="CEANumber" SortExpression="CEANumber" />
@@ -8,7 +9,6 @@
             <asp:BoundField DataField="SalesPersonName" HeaderText="SalesPersonName" SortExpression="SalesPersonName" />
             <asp:BoundField DataField="SalesPersonMobileNumber" HeaderText="SalesPersonMobileNumber" SortExpression="SalesPersonMobileNumber" />
             <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" />
-            <asp:BoundField DataField="ProfilePicture" HeaderText="ProfilePicture" SortExpression="ProfilePicture" />
         </Columns>
     </asp:GridView>
     <br />   
@@ -23,14 +23,14 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td style="width: 214px; height: 26px;">
+            <td style="width: 214px; height: 33px;">
                 <asp:Label ID="Label2" runat="server" Text="AgencyID"></asp:Label>
             </td>
-            <td style="height: 26px; width: 620px;">
-                <asp:DropDownList ID="ddlAgencyID" runat="server" DataSourceID="SqlDataSource2" DataTextField="AgencyID" DataValueField="AgencyID" Height="16px"  Width="211px">
+            <td style="height: 33px; width: 620px;">
+                <asp:DropDownList ID="ddlAgencyID" runat="server" DataSourceID="SqlDataSource2" DataTextField="AgencyID" DataValueField="AgencyID" Height="31px"  Width="204px" style="margin-top: 0">
                 </asp:DropDownList>
             </td>
-            <td style="height: 26px"></td>
+            <td style="height: 33px"></td>
         </tr>
         <tr>
             <td style="width: 214px">
@@ -70,12 +70,16 @@
             
             
             <td style="width: 620px; height: 88px;">
-                <asp:FileUpload ID="FileUpload1" runat="server" />
+                <asp:FileUpload ID="FileUpload1" runat="server" Width="204px" />
             </td>
         </tr>
         <tr>
             <td style="width: 214px; height: 31px;">
                               
+    <asp:Button ID="Button1" runat="server" Text="INSERT" OnClick="Button1_Click1" />
+        
+
+    
             </td>
             
             <td style="width: 620px; height: 31px;">
@@ -84,21 +88,17 @@
         </tr>
     </table>
     <br />
-    <asp:Button ID="Button1" runat="server" Text="INSERT" OnClick="Button1_Click1" />
-        
-
     
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:RealEstateModel %>" 
         SelectCommand="SELECT * FROM [Agents]" 
-        UpdateCommand="UPDATE Agents SET  CEANumber= @CEANumber,AgencyID=@AgencyID,SalesPersonName=@SalesPersonName,SalesPersonMobileNumber=@SalesPersonMobileNumber, Email = @Email,ProfilePicture=@ProfilePicture WHERE AgentID = @AgentID"
-        InsertCommand="INSERT INTO Agents(CEANumber,AgencyID,SalesPersonName,SalesPersonMobileNumber,Email) VALUES (@CEANumber, @AgencyID,@SalesPersonName,@SalesPersonMobileNumber,@Email,@ProfilePicture)">
+        UpdateCommand="UPDATE Agents SET  CEANumber= @CEANumber,AgencyID=@AgencyID,SalesPersonName=@SalesPersonName,SalesPersonMobileNumber=@SalesPersonMobileNumber, Email = @Email WHERE AgentID = @AgentID"
+        InsertCommand="INSERT INTO Agents(CEANumber,AgencyID,SalesPersonName,SalesPersonMobileNumber,Email) VALUES (@CEANumber, @AgencyID,@SalesPersonName,@SalesPersonMobileNumber,@Email)">
         <InsertParameters>
     <asp:ControlParameter Name="CEANumber" ControlID="txtCEANumber" Type="String" />
     <asp:ControlParameter Name="AgencyID" ControlID="ddlAgencyID" Type="String" />
     <asp:ControlParameter Name="SalesPersonName" ControlID="txtSalesPersonName" Type="String" />
     <asp:ControlParameter Name="SalesPersonMobileNumber" ControlID="txtSalesPersonMobileNumber" Type="String" />
     <asp:ControlParameter Name="Email" ControlID="txtEmail" Type="String" /> 
-<asp:ControlParameter Name="ProfilePicture" ControlID="FileUpload1" Type="String" /> 
 </InsertParameters>       
     </asp:SqlDataSource>
     <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:RealEstateModel %>" SelectCommand="SELECT [AgencyID] FROM [Agencies]"></asp:SqlDataSource>
