@@ -7,10 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace TEAM11REALESTATE {
+namespace TEAM11REALESTATE.Agencies {
     
     
-    public partial class Agencies {
+    public partial class AgencyCreate {
         
         /// <summary>
         /// lbl_AgencyName control.

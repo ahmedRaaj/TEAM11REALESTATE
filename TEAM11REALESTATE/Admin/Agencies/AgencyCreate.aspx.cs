@@ -7,9 +7,9 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using TEAM11REALESTATE.Models;
 
-namespace TEAM11REALESTATE
+namespace TEAM11REALESTATE.Agencies
 {
-    public partial class Agencies : System.Web.UI.Page
+    public partial class AgencyCreate : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

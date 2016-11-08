@@ -6,7 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using TEAM11REALESTATE.Models;
 
-namespace TEAM11REALESTATE.Agent_s_Agencies
+namespace TEAM11REALESTATE.Agencies
 {
     public partial class AgencyEditDelete : System.Web.UI.Page
     {
