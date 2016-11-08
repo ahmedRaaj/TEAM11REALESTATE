@@ -351,7 +351,7 @@ insert into Properties (ProperName, Rooms, PropertyTopDate, PricePSF, SizePSF, D
 values ('Twin Peaks', '1', '2016-08-12', 230, 1030, 'Facilities', 8, 8, 4, 8, 8, '2016-08-12')
 
 insert into Properties (ProperName, Rooms, PropertyTopDate, PricePSF, SizePSF, Description, DistrictID, PropertyTypeID, AgentID, SellerID, AddressID, LeaseStartDate)
-values ('Sky Vue', '5', '2016-08-12', 340, 1400, 'Facilities', 9, 9, 5, 9, 9, '2016-08-12')
+values ('Sky Vue', '5', '2016-08-12', 340, 1400, 'Facilities', 9, 9, 4, 9, 9, '2016-08-12')
 
 
 
