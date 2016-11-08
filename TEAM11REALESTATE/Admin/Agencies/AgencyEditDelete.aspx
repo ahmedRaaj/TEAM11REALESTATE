@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AgencyEditDelete.aspx.cs" Inherits="TEAM11REALESTATE.Agent_s_Agencies.AgencyEditDelete" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AgencyEditDelete.aspx.cs" Inherits="TEAM11REALESTATE.Agencies.AgencyEditDelete" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <table style="width: 100%; height: 698px;">
         <tr>
