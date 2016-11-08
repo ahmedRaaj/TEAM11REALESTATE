@@ -7,171 +7,180 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace TEAM11REALESTATE.SellerPages {
+namespace TEAM11REALESTATE.Agent_s_Agencies {
     
     
-    public partial class SellerAddPage {
+    public partial class AgencyEditDelete {
         
         /// <summary>
-        /// lblSellerName control.
+        /// lbl_AgencyName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblSellerName;
+        protected global::System.Web.UI.WebControls.Label lbl_AgencyName;
         
         /// <summary>
-        /// tbName control.
+        /// tbx_AgencyName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbName;
+        protected global::System.Web.UI.WebControls.TextBox tbx_AgencyName;
         
         /// <summary>
-        /// lblUnitNumber control.
+        /// lbl_PostalCode control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblUnitNumber;
+        protected global::System.Web.UI.WebControls.Label lbl_PostalCode;
         
         /// <summary>
-        /// tbUnitnum control.
+        /// tbx_PostalCode control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbUnitnum;
+        protected global::System.Web.UI.WebControls.TextBox tbx_PostalCode;
         
         /// <summary>
-        /// lblBlockNumber control.
+        /// lbl_StreetName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblBlockNumber;
+        protected global::System.Web.UI.WebControls.Label lbl_StreetName;
         
         /// <summary>
-        /// tbblknum control.
+        /// tbx_StreetName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbblknum;
+        protected global::System.Web.UI.WebControls.TextBox tbx_StreetName;
         
         /// <summary>
-        /// lblstreetName control.
+        /// lbl_BlockNumber control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblstreetName;
+        protected global::System.Web.UI.WebControls.Label lbl_BlockNumber;
         
         /// <summary>
-        /// tbStreet control.
+        /// tbx_BlockNumber control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbStreet;
+        protected global::System.Web.UI.WebControls.TextBox tbx_BlockNumber;
         
         /// <summary>
-        /// lblPostCode control.
+        /// lbl_UnitNumber control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblPostCode;
+        protected global::System.Web.UI.WebControls.Label lbl_UnitNumber;
         
         /// <summary>
-        /// tbPostcode control.
+        /// tbx_UnitNumber control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbPostcode;
+        protected global::System.Web.UI.WebControls.TextBox tbx_UnitNumber;
         
         /// <summary>
-        /// lblEmail control.
+        /// lbl_Email control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblEmail;
+        protected global::System.Web.UI.WebControls.Label lbl_Email;
         
         /// <summary>
-        /// tbEmail control.
+        /// tbx_Email control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbEmail;
+        protected global::System.Web.UI.WebControls.TextBox tbx_Email;
         
         /// <summary>
-        /// lblMobile control.
+        /// lbl_Mobile control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblMobile;
+        protected global::System.Web.UI.WebControls.Label lbl_Mobile;
         
         /// <summary>
-        /// tbMobile control.
+        /// tbx_Mobile control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbMobile;
+        protected global::System.Web.UI.WebControls.TextBox tbx_Mobile;
         
         /// <summary>
-        /// lblPhone control.
+        /// lbl_OfficePh control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblPhone;
+        protected global::System.Web.UI.WebControls.Label lbl_OfficePh;
         
         /// <summary>
-        /// tbPhone control.
+        /// tbx_OfficePh control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbPhone;
+        protected global::System.Web.UI.WebControls.TextBox tbx_OfficePh;
         
         /// <summary>
-        /// btnMainPage control.
+        /// lbl_Website control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnMainPage;
+        protected global::System.Web.UI.WebControls.Label lbl_Website;
         
         /// <summary>
-        /// btnInsert control.
+        /// tbx_Website control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnInsert;
+        protected global::System.Web.UI.WebControls.TextBox tbx_Website;
+        
+        /// <summary>
+        /// btn_Update control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_Update;
     }
 }

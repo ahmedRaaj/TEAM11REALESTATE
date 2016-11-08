@@ -21,6 +21,8 @@ where s.AddressID=a.AddressID" UpdateCommand="update [Addresses] set [BlockNumbe
             <asp:Parameter Name="AddressID" />
         </UpdateParameters>
     </asp:SqlDataSource>
-&nbsp;&nbsp;
-    <asp:Button ID="btnOk" runat="server" Text="Ok" Width="70px" OnClick="btnOk_Click" />
+
+    <br />
+
+    <asp:Button ID="btnOk" runat="server" Text="Ok" Width="100px" OnClick="btnOk_Click" Height="40px" />
 </asp:Content>

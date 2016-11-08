@@ -10,31 +10,33 @@
                    <td><span class="FilterTypeName" style="text-align: center;border:none;font-weight:bold">Maximum Price</span></td>
                    <td><span class="FilterTypeName" style="text-align: center;border:none;font-weight:bold">Rooms</span></td>
                    <td rowspan="2">
-                       <button type="button" class="btn btn-primary">SEARCH</button>
+                       <asp:Button  class="btn btn-primary" runat="server" Text="Search" ID="ButtonFilter" OnClick="ButtonFilter_Click"></asp:Button>
+                       
                    </td>
                </tr>
 
 
           <tr style="border:none">
                <td>
-                   <asp:DropDownList class="select" runat="server" ID="DDPropertyType" ItemType="TEAM11REALESTATE.Models.PropertyType" DataMember="PropertyTypeID" DataValueField="TypeName" SelectMethod="GetPropertyTypes">
+                   <asp:DropDownList class="select" runat="server" ID="DDPropertyType" ItemType="TEAM11REALESTATE.Models.PropertyType" DataMember="PropertyTypeID" DataValueField="TypeName" SelectMethod="GetPropertyTypes" appenddatabounditems="true" >
+                     <asp:listitem value="Any Type">Any Type</asp:listitem>
                        
                    </asp:DropDownList>
                </td>
                  <td>
-                   <select class="select">
-                       <option>{PlaceHolder}</option>
-                   </select>
+                  <asp:DropDownList class="select" runat="server" ID="DropDownMinPrice" SelectMethod="GetMinPrices" >
+                       
+                   </asp:DropDownList>
                </td>
                  <td>
-                   <select class="select">
-                       <option>{PlaceHolder}</option>
-                   </select>
+                   <asp:DropDownList class="select" runat="server" ID="DropDownMaxPrice" SelectMethod="GetMaxPrices" >
+                       
+                   </asp:DropDownList>
                </td>
                  <td>
-                   <select class="select">
-                       <option>{PlaceHolder}</option>
-                   </select>
+                   <asp:DropDownList class="select" runat="server" ID="DropDownRoom" SelectMethod="GetRooms" >
+                       
+                   </asp:DropDownList>
                </td>
                
            </tr>
@@ -63,7 +65,7 @@
                                 <img src="/Images/Properties/Condo1.jpg" class="img-rounded" alt="Cinque Terre" width="250" height="200">
                             </td>
                             <td width="45%">
-                                <span style="font-weight:bold;font-size:large"><%# Item.ProperName %></span>
+                              <a href="PropertyDetails.aspx?PropertyID=<%# Item.PropertyID %>">  <span style="font-weight:bold;font-size:large"><%# Item.ProperName %></span> </a>
                                 <br />
                                 <%# Item.Address.StreetName + " " + Item.Address.PostalCode %>
                                 <br />
