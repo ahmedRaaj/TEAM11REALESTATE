@@ -217,6 +217,10 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="SellerPages\SellerAddPage.aspx" />
+    <Content Include="SellerPages\SellerDeletePage.aspx" />
+    <Content Include="SellerPages\SellerEditPage.aspx" />
+    <Content Include="SellerPages\SellerMainPage.aspx" />
     <Content Include="Site.Master" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config">
@@ -401,6 +405,34 @@
     <Compile Include="Models\Seller.cs" />
     <Compile Include="Models\sysdiagram.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SellerPages\SellerAddPage.aspx.cs">
+      <DependentUpon>SellerAddPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SellerPages\SellerAddPage.aspx.designer.cs">
+      <DependentUpon>SellerAddPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SellerPages\SellerDeletePage.aspx.cs">
+      <DependentUpon>SellerDeletePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SellerPages\SellerDeletePage.aspx.designer.cs">
+      <DependentUpon>SellerDeletePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SellerPages\SellerEditPage.aspx.cs">
+      <DependentUpon>SellerEditPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SellerPages\SellerEditPage.aspx.designer.cs">
+      <DependentUpon>SellerEditPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SellerPages\SellerMainPage.aspx.cs">
+      <DependentUpon>SellerMainPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SellerPages\SellerMainPage.aspx.designer.cs">
+      <DependentUpon>SellerMainPage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
