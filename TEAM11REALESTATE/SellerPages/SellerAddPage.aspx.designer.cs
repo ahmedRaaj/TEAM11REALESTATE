@@ -13,22 +13,22 @@ namespace TEAM11REALESTATE.SellerPages {
     public partial class SellerAddPage {
         
         /// <summary>
-        /// gvAddrList control.
+        /// lblSellerName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvAddrList;
+        protected global::System.Web.UI.WebControls.Label lblSellerName;
         
         /// <summary>
-        /// AddrDataSource control.
+        /// tbName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource AddrDataSource;
+        protected global::System.Web.UI.WebControls.TextBox tbName;
         
         /// <summary>
         /// lblUnitNumber control.
@@ -157,49 +157,13 @@ namespace TEAM11REALESTATE.SellerPages {
         protected global::System.Web.UI.WebControls.TextBox tbPhone;
         
         /// <summary>
-        /// btnInsertAddr control.
+        /// btnMainPage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnInsertAddr;
-        
-        /// <summary>
-        /// lblSellerName control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblSellerName;
-        
-        /// <summary>
-        /// tbName control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbName;
-        
-        /// <summary>
-        /// lblAddCode control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblAddCode;
-        
-        /// <summary>
-        /// tbAddrID control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbAddrID;
+        protected global::System.Web.UI.WebControls.Button btnMainPage;
         
         /// <summary>
         /// btnInsert control.
