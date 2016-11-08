@@ -42,6 +42,7 @@ namespace TEAM11REALESTATE.Agents
             }
             a.ProfilePicture = a.AgentID + ".jpg";
             db.SaveChanges();
+            GridView1.DataBind();
            // SqlDataSource1.Insert();
         }
 

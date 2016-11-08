@@ -9,6 +9,7 @@
             <asp:BoundField DataField="SalesPersonName" HeaderText="SalesPersonName" SortExpression="SalesPersonName" />
             <asp:BoundField DataField="SalesPersonMobileNumber" HeaderText="SalesPersonMobileNumber" SortExpression="SalesPersonMobileNumber" />
             <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" />
+            <asp:BoundField DataField="ProfilePicture" HeaderText="ProfilePicture" SortExpression="ProfilePicture" />
         </Columns>
     </asp:GridView>
     <br />   
@@ -91,7 +92,7 @@
     
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:RealEstateModel %>" 
         SelectCommand="SELECT * FROM [Agents]" 
-        UpdateCommand="UPDATE Agents SET  CEANumber= @CEANumber,AgencyID=@AgencyID,SalesPersonName=@SalesPersonName,SalesPersonMobileNumber=@SalesPersonMobileNumber, Email = @Email WHERE AgentID = @AgentID"
+        UpdateCommand="UPDATE Agents SET  CEANumber= @CEANumber,AgencyID=@AgencyID,SalesPersonName=@SalesPersonName,SalesPersonMobileNumber=@SalesPersonMobileNumber, Email = @Email,ProfilePicture=@ProfilePicture WHERE AgentID = @AgentID"
         InsertCommand="INSERT INTO Agents(CEANumber,AgencyID,SalesPersonName,SalesPersonMobileNumber,Email) VALUES (@CEANumber, @AgencyID,@SalesPersonName,@SalesPersonMobileNumber,@Email)">
         <InsertParameters>
     <asp:ControlParameter Name="CEANumber" ControlID="txtCEANumber" Type="String" />
