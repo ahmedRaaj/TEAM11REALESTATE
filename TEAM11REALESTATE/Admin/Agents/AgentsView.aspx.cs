@@ -17,12 +17,21 @@ namespace TEAM11REALESTATE.Agents
         }              
         protected void Button1_Click1(object sender, EventArgs e)
         {
-            string filename = FileUpload1.FileName;
+            RealEstateModel db = new RealEstateModel();
+            Agent a = new Agent();
+            a.CEANumber = txtCEANumber.Text;
+            a.Email = txtEmail.Text;
+            a.AgencyID = int.Parse( ddlAgencyID.SelectedItem.Value);
+            a.SalesPersonName = txtSalesPersonName.Text;
+            a.SalesPersonMobileNumber = txtSalesPersonMobileNumber.Text;
+            db.Agents.Add(a);
+            db.SaveChanges();
+
             if (FileUpload1.HasFile)
             {  
                 try
                 {                   
-                    FileUpload1.SaveAs(Server.MapPath("~/Images/Agents/") + filename);                   
+                    FileUpload1.SaveAs(Server.MapPath("~/Images/Agents/") + a.AgentID+".jpg");                   
                     Label3.Text = "Upload Status:File Uploaded Successfully.";                                    
                 }
                 catch(Exception ex)
@@ -31,7 +40,9 @@ namespace TEAM11REALESTATE.Agents
                         "The following error occured:"+ex.Message;
                 }   
             }
-            SqlDataSource1.Insert();
+            a.ProfilePicture = a.AgentID + ".jpg";
+            db.SaveChanges();
+           // SqlDataSource1.Insert();
         }
 
         

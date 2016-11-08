@@ -174,6 +174,7 @@
     <Content Include="Account\VerifyPhoneNumber.aspx" />
     <Content Include="Admin\AdminDefault.aspx" />
     <Content Include="Admin\Agents.aspx" />
+    <Content Include="Admin\Districts\Districts.aspx" />
     <Content Include="Admin\Properties.aspx" />
     <Content Include="Admin\Sellers.aspx" />
     <Content Include="Admin\Agencies\AgencyCreate.aspx" />
@@ -367,6 +368,13 @@
     <Compile Include="Admin\Agents.aspx.designer.cs">
       <DependentUpon>Agents.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\Districts\Districts.aspx.cs">
+      <DependentUpon>Districts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Districts\Districts.aspx.designer.cs">
+      <DependentUpon>Districts.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\Properties.aspx.cs">
       <DependentUpon>Properties.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -430,6 +438,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Logic\Util.cs" />
     <Compile Include="Models\Address.cs" />
     <Compile Include="Models\Agency.cs" />
     <Compile Include="Models\Agent.cs" />
