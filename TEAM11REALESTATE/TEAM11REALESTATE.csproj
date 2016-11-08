@@ -175,8 +175,7 @@
     <Content Include="Admin\Agents.aspx" />
     <Content Include="Admin\Properties.aspx" />
     <Content Include="Admin\Sellers.aspx" />
-    <Content Include="Agent%27s Agencies\AgencyCreate.aspx" />
-    <Content Include="Agent%27s Agencies\AgencyEditDelete.aspx" />
+    <Content Include="Agents\AgentsView.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap2.css" />
@@ -190,6 +189,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Images\Properties\Condo1.jpg" />
+    <Content Include="RealEState.sql" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -222,6 +222,10 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="SellerPages\SellerAddPage.aspx" />
+    <Content Include="SellerPages\SellerDeletePage.aspx" />
+    <Content Include="SellerPages\SellerEditPage.aspx" />
+    <Content Include="SellerPages\SellerMainPage.aspx" />
     <Content Include="Site.Master" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config">
@@ -366,19 +370,12 @@
     <Compile Include="Admin\Sellers.aspx.designer.cs">
       <DependentUpon>Sellers.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Agent%27s Agencies\AgencyCreate.aspx.cs">
-      <DependentUpon>AgencyCreate.aspx</DependentUpon>
+    <Compile Include="Agents\AgentsView.aspx.cs">
+      <DependentUpon>AgentsView.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Agent%27s Agencies\AgencyCreate.aspx.designer.cs">
-      <DependentUpon>AgencyCreate.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Agent%27s Agencies\AgencyEditDelete.aspx.cs">
-      <DependentUpon>AgencyEditDelete.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Agent%27s Agencies\AgencyEditDelete.aspx.designer.cs">
-      <DependentUpon>AgencyEditDelete.aspx</DependentUpon>
+    <Compile Include="Agents\AgentsView.aspx.designer.cs">
+      <DependentUpon>AgentsView.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
@@ -415,11 +412,41 @@
     <Compile Include="Models\District.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Property.cs" />
+    <Compile Include="Models\PropertyImage.cs" />
     <Compile Include="Models\PropertyType.cs" />
+    <Compile Include="Models\RealEstateDataInitializer.cs" />
     <Compile Include="Models\RealEstateModel.cs" />
     <Compile Include="Models\Seller.cs" />
     <Compile Include="Models\sysdiagram.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SellerPages\SellerAddPage.aspx.cs">
+      <DependentUpon>SellerAddPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SellerPages\SellerAddPage.aspx.designer.cs">
+      <DependentUpon>SellerAddPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SellerPages\SellerDeletePage.aspx.cs">
+      <DependentUpon>SellerDeletePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SellerPages\SellerDeletePage.aspx.designer.cs">
+      <DependentUpon>SellerDeletePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SellerPages\SellerEditPage.aspx.cs">
+      <DependentUpon>SellerEditPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SellerPages\SellerEditPage.aspx.designer.cs">
+      <DependentUpon>SellerEditPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SellerPages\SellerMainPage.aspx.cs">
+      <DependentUpon>SellerMainPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SellerPages\SellerMainPage.aspx.designer.cs">
+      <DependentUpon>SellerMainPage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -457,7 +484,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>4871</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
