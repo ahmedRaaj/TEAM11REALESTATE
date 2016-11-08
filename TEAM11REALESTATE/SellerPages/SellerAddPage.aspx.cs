@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data;
 using System.Data.SqlClient;
+using TEAM11REALESTATE.Models;
 
 namespace TEAM11REALESTATE.SellerPages
 {
@@ -19,32 +20,58 @@ namespace TEAM11REALESTATE.SellerPages
 
         protected void btnInsert_Click(object sender, EventArgs e)
         {
+            //con.Open();
+            //SqlCommand cmd = con.CreateCommand();
+            //cmd.CommandType = CommandType.Text;
+            //cmd.CommandText = ("INSERT INTO  Addresses (UnitNumber,BlockNumber,StreetName,PostalCode,Email,Mobile,Phone) values('"
+            //    + tbUnitnum.Text.ToString()
+            //    + "','" + tbblknum.Text.ToString()
+            //    + "','" + tbStreet.Text.ToString()
+            //    + "','" + tbPostcode.Text.ToString()
+            //    + "','" + tbEmail.Text.ToString()
+            //    + "','" + tbMobile.Text.ToString()
+            //    + "','" + tbPhone.Text.ToString() + "')");
+            //cmd.ExecuteNonQuery();
+            //con.Close();
+
+
+            RealEstateModel ctx = new RealEstateModel();
+            Address addr = new Address();
+            addr.UnitNumber = tbUnitnum.Text.ToString();
+            addr.BlockNumber = tbblknum.Text.ToString();
+            addr.StreetName = tbStreet.Text.ToString();
+            addr.PostalCode =tbPostcode.Text.ToString();
+            addr.Email = tbEmail.Text.ToString();
+            addr.Mobile = tbMobile.Text.ToString();
+            addr.Phone = tbPhone.Text.ToString();
+            ctx.Addresses.Add(addr);
+
+            ctx.SaveChanges();
+
+
+            List<Address> AddrList = ctx.Addresses.ToList();
+            AddrList.Count().ToString();
+            Address LastAddr = new Address();
+            LastAddr = AddrList.Last();
+
+
             con.Open();
-            SqlCommand cmd = con.CreateCommand() ;
-            cmd.CommandType = CommandType.Text;
-            cmd.CommandText = ("INSERT INTO Sellers (SellerName, AddressID) VALUES ('" + tbName.Text.ToString() + "'," + tbAddrID.Text.ToString() + ")");
-            cmd.ExecuteNonQuery();
+            SqlCommand cmd1 = con.CreateCommand();
+
+            cmd1.CommandType = CommandType.Text;
+            cmd1.CommandText = ("INSERT INTO Sellers (SellerName, AddressID) VALUES ('" + tbName.Text.ToString() + "'," + LastAddr.AddressID.ToString() + ")");
+            cmd1.ExecuteNonQuery();
             con.Close();
+
 
             Response.Redirect("~/SellerPages/SellerMainPage.aspx");
         }
 
-        protected void btnInsertAddr_Click(object sender, EventArgs e)
+
+
+        protected void MainPage_Click(object sender, EventArgs e)
         {
-            con.Open();
-            SqlCommand cmd = con.CreateCommand();
-            cmd.CommandType = CommandType.Text;
-            cmd.CommandText = ("INSERT INTO  Addresses (UnitNumber,BlockNumber,StreetName,PostalCode,Email,Mobile,Phone) values('" 
-                + tbUnitnum.Text.ToString()
-                +"','"+tbblknum.Text.ToString()
-                +"','"+tbStreet.Text.ToString()
-                +"','"+tbPostcode.Text.ToString()
-                +"','"+tbEmail.Text.ToString()
-                +"','"+tbMobile.Text.ToString()
-                +"','"+tbPhone.Text.ToString()+"')");
-            cmd.ExecuteNonQuery();
-            con.Close();
-            Response.Redirect("~/SellerPages/SellerAddPage.aspx");
+            Response.Redirect("~/SellerPages/SellerMainPage.aspx");
         }
     }
 }
