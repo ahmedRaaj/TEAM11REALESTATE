@@ -173,6 +173,7 @@
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
     <Content Include="Admin\AdminDefault.aspx" />
+    <Content Include="Admin\Agencies\AgencyMain.aspx" />
     <Content Include="Admin\Agents.aspx" />
     <Content Include="Admin\Districts\Districts.aspx" />
     <Content Include="Admin\Properties.aspx" />
@@ -360,6 +361,13 @@
     </Compile>
     <Compile Include="Admin\AdminDefault.aspx.designer.cs">
       <DependentUpon>AdminDefault.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Agencies\AgencyMain.aspx.cs">
+      <DependentUpon>AgencyMain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Agencies\AgencyMain.aspx.designer.cs">
+      <DependentUpon>AgencyMain.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\Agents.aspx.cs">
       <DependentUpon>Agents.aspx</DependentUpon>

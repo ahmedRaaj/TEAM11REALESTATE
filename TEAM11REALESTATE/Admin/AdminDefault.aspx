@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <div id="AdminNav" style="text-align:center">
        <a href="Agents/AgentsView.aspx"><b>Manage Agents |</b></a>
-       <a href="Agencies/AgencyEditDelete.aspx"><b>Manage Agencies |</b></a>
+       <a href="Agencies/AgencyMain.aspx"><b>Manage Agencies |</b></a>
 
        <a href="Districts/Districts.aspx"> <b>Manage Districts |</b></a>
        <a href="Sellers/SellerMainPage.aspx"> <b>Manage Sellers |</b></a>
