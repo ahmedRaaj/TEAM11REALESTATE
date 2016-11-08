@@ -175,6 +175,7 @@
     <Content Include="Admin\Agents.aspx" />
     <Content Include="Admin\Properties.aspx" />
     <Content Include="Admin\Sellers.aspx" />
+    <Content Include="Agents\AgentsView.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -361,6 +362,13 @@
     <Compile Include="Admin\Sellers.aspx.designer.cs">
       <DependentUpon>Sellers.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Agents\AgentsView.aspx.cs">
+      <DependentUpon>AgentsView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Agents\AgentsView.aspx.designer.cs">
+      <DependentUpon>AgentsView.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
@@ -438,7 +446,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>4871</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
