@@ -97,6 +97,8 @@ VALUES ('AStarProperty', 3)
 
 
 
+INSERT INTO Agencies (AgencyName, AddressID)
+VALUES ('SingAgency', 4)
 
 
 

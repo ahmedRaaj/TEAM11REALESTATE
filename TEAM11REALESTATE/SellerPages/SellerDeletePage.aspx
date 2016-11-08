@@ -20,6 +20,8 @@ where s.AddressID=a.AddressID" DeleteCommand="DELETE FROM [Sellers] WHERE [Selle
             <asp:Parameter Name="SellerID" />
         </DeleteParameters>
         </asp:SqlDataSource>
-&nbsp;&nbsp;
+
+        <br />
+
     <asp:Button ID="btnMainPage" runat="server" Text="Ok" Width="70px" OnClick="btnMainPage_Click" />
 </asp:Content>

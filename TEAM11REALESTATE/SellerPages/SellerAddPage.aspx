@@ -14,84 +14,54 @@
             </Columns>
         </asp:GridView>
         <asp:SqlDataSource ID="AddrDataSource" runat="server" ConnectionString="Data Source=.;Initial Catalog=SA43TEAM11REALESTATE;Integrated Security=True;MultipleActiveResultSets=True;Application Name=EntityFramework" ProviderName="System.Data.SqlClient" SelectCommand="SELECT AddressID, UnitNumber, BlockNumber, StreetName, PostalCode, Email, Mobile, Phone, Website FROM Addresses"></asp:SqlDataSource>
-        <table style="width: 100%; height: 194px;">
+        <table style="width: 100%; height: 638px;">
             <tr>
-                <td style="width: 9px">
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
+                <td style="width: 7px; height: 300px;">
                 </td>
-                <td style="width: 635px">&nbsp;<asp:Label ID="lblUnitNumber" runat="server" Text="Unit Number:"></asp:Label>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <asp:TextBox ID="tbUnitnum" runat="server" Width="128px"></asp:TextBox>
+                <td style="width: 635px; height: 300px;"><asp:Label ID="lblUnitNumber" runat="server" Text="Unit Number:" Width="200px"></asp:Label>
+    <asp:TextBox ID="tbUnitnum" runat="server" Width="200px"></asp:TextBox>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <br />
-    <asp:Label ID="lblBlockNumber" runat="server" Text="Block Number:"></asp:Label>
-    &nbsp;&nbsp;&nbsp;
-    <asp:TextBox ID="tbblknum" runat="server"></asp:TextBox>
+    <asp:Label ID="lblBlockNumber" runat="server" Text="Block Number:" Width="200px"></asp:Label>
+    <asp:TextBox ID="tbblknum" runat="server" Width="200px"></asp:TextBox>
     <br />
-    <asp:Label ID="lblstreetName" runat="server" Text="Street:"></asp:Label>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <asp:TextBox ID="tbStreet" runat="server" Width="429px"></asp:TextBox>
+    <asp:Label ID="lblstreetName" runat="server" Text="Street:" Width="200px"></asp:Label>
+    <asp:TextBox ID="tbStreet" runat="server" Width="300px"></asp:TextBox>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
-    <asp:Label ID="lblPostCode" runat="server" Text="Postal Code:"></asp:Label>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <asp:TextBox ID="tbPostcode" runat="server" Width="122px"></asp:TextBox>
+    <asp:Label ID="lblPostCode" runat="server" Text="Postal Code:" Width="200px"></asp:Label>
+    <asp:TextBox ID="tbPostcode" runat="server" Width="200px"></asp:TextBox>
 &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
                     <br />
-    <asp:Label ID="lblEmail" runat="server" Text="Email:"></asp:Label>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <asp:TextBox ID="tbEmail" runat="server"></asp:TextBox>
-&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;<br />
-                    <asp:Label ID="lblMobile" runat="server" Text="Moblie Number:"></asp:Label>
-    &nbsp;
-    <asp:TextBox ID="tbMobile" runat="server"></asp:TextBox>
+    <asp:Label ID="lblEmail" runat="server" Text="Email:" Width="200px"></asp:Label>
+    <asp:TextBox ID="tbEmail" runat="server" Width="200px"></asp:TextBox>
+<br />
+                    <asp:Label ID="lblMobile" runat="server" Text="Moblie Number:" Width="200px"></asp:Label>
+    <asp:TextBox ID="tbMobile" runat="server" Width="200px"></asp:TextBox>
                     <br />
-    <asp:Label ID="lblPhone" runat="server" Text="Phone Number:"></asp:Label>
-    &nbsp;
-    <asp:TextBox ID="tbPhone" runat="server"></asp:TextBox>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <asp:Label ID="lblPhone" runat="server" Text="Phone Number:" Width="200px"></asp:Label>
+    <asp:TextBox ID="tbPhone" runat="server" Width="200px"></asp:TextBox>
+<br />
+    <asp:Button ID="btnInsertAddr" runat="server" Text="Insert Address" Width="170px" OnClick="btnInsertAddr_Click" Height="40px" />
     <br />
-                    <asp:Button ID="btnInsertAddr" runat="server" Height="26px" Text="Insert Addrees" Width="170px" OnClick="btnInsertAddr_Click" />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <br />
                     <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <br />
-                    <asp:Label ID="lblSellerName" runat="server" Text="Name:"></asp:Label>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Label ID="lblSellerName" runat="server" Text="Name:" Width="200px"></asp:Label>
     <asp:TextBox ID="tbName" runat="server"></asp:TextBox>
                     &nbsp;<br />
-                    <asp:Label ID="lblAddCode" runat="server" Text="AddressID:"></asp:Label>
-        &nbsp;
+                    <asp:Label ID="lblAddCode" runat="server" Text="AddressID:" Width="200px"></asp:Label>
     <asp:TextBox ID="tbAddrID" runat="server"></asp:TextBox>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <br />
     <br />
-    <asp:Button ID="btnInsert" runat="server" Text="Insert Seller" Width="170px" OnClick="btnInsert_Click" />
+    <asp:Button ID="btnInsert" runat="server" Text="Insert Seller" Width="170px" OnClick="btnInsert_Click" Height="40px" />
                 </td>
-                <td>&nbsp;</td>
+                <td style="height: 300px">&nbsp;</td>
             </tr>
             <tr>
-                <td style="width: 9px"></td>
-                <td style="width: 635px"></td>
-                <td></td>
+                <td style="width: 7px; height: 20px;"></td>
+                <td style="width: 635px; height: 20px;"></td>
+                <td style="height: 20px">
+                    &nbsp;</td>
             </tr>
         </table>
         <br />
