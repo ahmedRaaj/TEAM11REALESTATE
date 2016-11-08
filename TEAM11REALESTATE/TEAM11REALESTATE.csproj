@@ -188,6 +188,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Images\Properties\Condo1.jpg" />
+    <Content Include="RealEState.sql" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -399,7 +400,9 @@
     <Compile Include="Models\District.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Property.cs" />
+    <Compile Include="Models\PropertyImage.cs" />
     <Compile Include="Models\PropertyType.cs" />
+    <Compile Include="Models\RealEstateDataInitializer.cs" />
     <Compile Include="Models\RealEstateModel.cs" />
     <Compile Include="Models\Seller.cs" />
     <Compile Include="Models\sysdiagram.cs" />
