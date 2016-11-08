@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace TEAM11REALESTATE.Agent_s_Agencies {
+namespace TEAM11REALESTATE.Agencies {
     
     
     public partial class AgencyEditDelete {
