@@ -23,5 +23,5 @@ where s.AddressID=a.AddressID" DeleteCommand="DELETE FROM [Sellers] WHERE [Selle
 
         <br />
 
-    <asp:Button ID="btnMainPage" runat="server" Text="Ok" Width="70px" OnClick="btnMainPage_Click" />
+    <asp:Button ID="btnMainPage" runat="server" Text="Ok" Width="100px" OnClick="btnMainPage_Click" Height="40px" />
 </asp:Content>
