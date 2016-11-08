@@ -13,6 +13,15 @@ namespace TEAM11REALESTATE {
     public partial class _Default {
         
         /// <summary>
+        /// ButtonFilter control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button ButtonFilter;
+        
+        /// <summary>
         /// DDPropertyType control.
         /// </summary>
         /// <remarks>
@@ -20,6 +29,33 @@ namespace TEAM11REALESTATE {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList DDPropertyType;
+        
+        /// <summary>
+        /// DropDownMinPrice control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DropDownMinPrice;
+        
+        /// <summary>
+        /// DropDownMaxPrice control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DropDownMaxPrice;
+        
+        /// <summary>
+        /// DropDownRoom control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DropDownRoom;
         
         /// <summary>
         /// PropertyList control.

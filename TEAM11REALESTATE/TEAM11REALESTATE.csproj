@@ -176,6 +176,8 @@
     <Content Include="Admin\Agents.aspx" />
     <Content Include="Admin\Properties.aspx" />
     <Content Include="Admin\Sellers.aspx" />
+    <Content Include="Agencies\AgencyCreate.aspx" />
+    <Content Include="Agencies\AgencyEditDelete.aspx" />
     <Content Include="Agents\AgentsView.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
@@ -378,6 +380,20 @@
     </Compile>
     <Compile Include="Admin\Sellers.aspx.designer.cs">
       <DependentUpon>Sellers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agencies\AgencyCreate.aspx.cs">
+      <DependentUpon>AgencyCreate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Agencies\AgencyCreate.aspx.designer.cs">
+      <DependentUpon>AgencyCreate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agencies\AgencyEditDelete.aspx.cs">
+      <DependentUpon>AgencyEditDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Agencies\AgencyEditDelete.aspx.designer.cs">
+      <DependentUpon>AgencyEditDelete.aspx</DependentUpon>
     </Compile>
     <Compile Include="Agents\AgentsView.aspx.cs">
       <DependentUpon>AgentsView.aspx</DependentUpon>
