@@ -226,10 +226,10 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="Admin\SellerPages\SellerAddPage.aspx" />
-    <Content Include="Admin\SellerPages\SellerDeletePage.aspx" />
-    <Content Include="Admin\SellerPages\SellerEditPage.aspx" />
-    <Content Include="Admin\SellerPages\SellerMainPage.aspx" />
+    <Content Include="Admin\Sellers\SellerAddPage.aspx" />
+    <Content Include="Admin\Sellers\SellerDeletePage.aspx" />
+    <Content Include="Admin\Sellers\SellerEditPage.aspx" />
+    <Content Include="Admin\Sellers\SellerMainPage.aspx" />
     <Content Include="Site.Master" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config">
@@ -451,32 +451,32 @@
     <Compile Include="PropertyDetails.aspx.designer.cs">
       <DependentUpon>PropertyDetails.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\SellerPages\SellerAddPage.aspx.cs">
+    <Compile Include="Admin\Sellers\SellerAddPage.aspx.cs">
       <DependentUpon>SellerAddPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\SellerPages\SellerAddPage.aspx.designer.cs">
+    <Compile Include="Admin\Sellers\SellerAddPage.aspx.designer.cs">
       <DependentUpon>SellerAddPage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\SellerPages\SellerDeletePage.aspx.cs">
+    <Compile Include="Admin\Sellers\SellerDeletePage.aspx.cs">
       <DependentUpon>SellerDeletePage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\SellerPages\SellerDeletePage.aspx.designer.cs">
+    <Compile Include="Admin\Sellers\SellerDeletePage.aspx.designer.cs">
       <DependentUpon>SellerDeletePage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\SellerPages\SellerEditPage.aspx.cs">
+    <Compile Include="Admin\Sellers\SellerEditPage.aspx.cs">
       <DependentUpon>SellerEditPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\SellerPages\SellerEditPage.aspx.designer.cs">
+    <Compile Include="Admin\Sellers\SellerEditPage.aspx.designer.cs">
       <DependentUpon>SellerEditPage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\SellerPages\SellerMainPage.aspx.cs">
+    <Compile Include="Admin\Sellers\SellerMainPage.aspx.cs">
       <DependentUpon>SellerMainPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\SellerPages\SellerMainPage.aspx.designer.cs">
+    <Compile Include="Admin\Sellers\SellerMainPage.aspx.designer.cs">
       <DependentUpon>SellerMainPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site.Master.cs">
