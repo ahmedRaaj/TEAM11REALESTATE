@@ -53,6 +53,8 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
@@ -170,19 +172,31 @@
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
+    <Content Include="Admin\AdminDefault.aspx" />
+    <Content Include="Admin\Agencies\AgencyEditDel.aspx" />
+    <Content Include="Admin\Agencies\AgencyMain.aspx" />
+    <Content Include="Admin\Agents.aspx" />
+    <Content Include="Admin\Districts\Districts.aspx" />
+    <Content Include="Admin\Properties.aspx" />
+    <Content Include="Admin\Sellers.aspx" />
+    <Content Include="Admin\Agencies\AgencyCreate.aspx" />
+    <Content Include="Admin\Agencies\AgencyEditDelete.aspx" />
+    <Content Include="Admin\Agents\AgentsView.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\bootstrap2.css" />
+    <Content Include="Content\bootstrap2.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Account\Web.config" />
-    <Content Include="MainPage.Master" />
+    <Content Include="Content\bootstrap.min.css" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="Home.aspx" />
-    <Content Include="Images\Night Landscape-35.png" />
+    <Content Include="Images\Properties\Condo1.jpg" />
+    <Content Include="PropertyDetails.aspx" />
+    <Content Include="RealEState.sql" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -215,9 +229,15 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Admin\Sellers\SellerAddPage.aspx" />
+    <Content Include="Admin\Sellers\SellerDeletePage.aspx" />
+    <Content Include="Admin\Sellers\SellerEditPage.aspx" />
+    <Content Include="Admin\Sellers\SellerMainPage.aspx" />
     <Content Include="Site.Master" />
     <Content Include="ViewSwitcher.ascx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Bundle.config" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
@@ -336,6 +356,76 @@
     <Compile Include="Account\VerifyPhoneNumber.aspx.designer.cs">
       <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\AdminDefault.aspx.cs">
+      <DependentUpon>AdminDefault.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminDefault.aspx.designer.cs">
+      <DependentUpon>AdminDefault.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Agencies\AgencyEditDel.aspx.cs">
+      <DependentUpon>AgencyEditDel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Agencies\AgencyEditDel.aspx.designer.cs">
+      <DependentUpon>AgencyEditDel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Agencies\AgencyMain.aspx.cs">
+      <DependentUpon>AgencyMain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Agencies\AgencyMain.aspx.designer.cs">
+      <DependentUpon>AgencyMain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Agents.aspx.cs">
+      <DependentUpon>Agents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Agents.aspx.designer.cs">
+      <DependentUpon>Agents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Districts\Districts.aspx.cs">
+      <DependentUpon>Districts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Districts\Districts.aspx.designer.cs">
+      <DependentUpon>Districts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Properties.aspx.cs">
+      <DependentUpon>Properties.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Properties.aspx.designer.cs">
+      <DependentUpon>Properties.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Sellers.aspx.cs">
+      <DependentUpon>Sellers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Sellers.aspx.designer.cs">
+      <DependentUpon>Sellers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Agencies\AgencyCreate.aspx.cs">
+      <DependentUpon>AgencyCreate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Agencies\AgencyCreate.aspx.designer.cs">
+      <DependentUpon>AgencyCreate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Agencies\AgencyEditDelete.aspx.cs">
+      <DependentUpon>AgencyEditDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Agencies\AgencyEditDelete.aspx.designer.cs">
+      <DependentUpon>AgencyEditDelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Agents\AgentsView.aspx.cs">
+      <DependentUpon>AgentsView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Agents\AgentsView.aspx.designer.cs">
+      <DependentUpon>AgentsView.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
@@ -364,22 +454,56 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Home.aspx.cs">
-      <DependentUpon>Home.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Home.aspx.designer.cs">
-      <DependentUpon>Home.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="MainPage.Master.cs">
-      <DependentUpon>MainPage.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="MainPage.Master.designer.cs">
-      <DependentUpon>MainPage.Master</DependentUpon>
-    </Compile>
+    <Compile Include="Logic\Util.cs" />
+    <Compile Include="Models\Address.cs" />
+    <Compile Include="Models\Agency.cs" />
+    <Compile Include="Models\Agent.cs" />
+    <Compile Include="Models\Area.cs" />
+    <Compile Include="Models\District.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Property.cs" />
+    <Compile Include="Models\PropertyImage.cs" />
+    <Compile Include="Models\PropertyType.cs" />
+    <Compile Include="Models\RealEstateDataInitializer.cs" />
+    <Compile Include="Models\RealEstateModel.cs" />
+    <Compile Include="Models\Seller.cs" />
+    <Compile Include="Models\sysdiagram.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropertyDetails.aspx.cs">
+      <DependentUpon>PropertyDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PropertyDetails.aspx.designer.cs">
+      <DependentUpon>PropertyDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Sellers\SellerAddPage.aspx.cs">
+      <DependentUpon>SellerAddPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Sellers\SellerAddPage.aspx.designer.cs">
+      <DependentUpon>SellerAddPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Sellers\SellerDeletePage.aspx.cs">
+      <DependentUpon>SellerDeletePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Sellers\SellerDeletePage.aspx.designer.cs">
+      <DependentUpon>SellerDeletePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Sellers\SellerEditPage.aspx.cs">
+      <DependentUpon>SellerEditPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Sellers\SellerEditPage.aspx.designer.cs">
+      <DependentUpon>SellerEditPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Sellers\SellerMainPage.aspx.cs">
+      <DependentUpon>SellerMainPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Sellers\SellerMainPage.aspx.designer.cs">
+      <DependentUpon>SellerMainPage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -394,12 +518,6 @@
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
-    <Compile Include="Site1.MainPage.cs">
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Site1.MainPage.designer.cs">
-      <DependentUpon>Site1.MainPage.cs</DependentUpon>
-    </Compile>
     <Compile Include="Startup.cs" />
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
@@ -411,6 +529,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Images\Agents\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -423,7 +542,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>4871</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>

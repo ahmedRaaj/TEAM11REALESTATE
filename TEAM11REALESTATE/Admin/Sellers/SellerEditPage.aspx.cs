@@ -6,15 +6,19 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using TEAM11REALESTATE.Models;
 
-namespace TEAM11REALESTATE.Admin
+
+namespace TEAM11REALESTATE.SellerPages
 {
-    public partial class Agents : System.Web.UI.Page
+    public partial class SellerEditPage : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            RealEstateModel ctx = new RealEstateModel();
-            GridViewAgents.DataSource = ctx.Properties.ToList();
-            GridViewAgents.DataBind();
+
+        }
+
+        protected void btnOk_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/SellerPages/SellerMainPage.aspx");
         }
     }
 }

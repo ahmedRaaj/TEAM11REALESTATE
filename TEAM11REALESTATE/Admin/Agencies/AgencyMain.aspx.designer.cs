@@ -7,63 +7,45 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace TEAM11REALESTATE {
+namespace TEAM11REALESTATE.Admin.Agencies {
     
     
-    public partial class _Default {
+    public partial class AgencyMain {
         
         /// <summary>
-        /// ButtonFilter control.
+        /// GridView1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ButtonFilter;
+        protected global::System.Web.UI.WebControls.GridView GridView1;
         
         /// <summary>
-        /// DDPropertyType control.
+        /// SqlDataSource control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DDPropertyType;
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource;
         
         /// <summary>
-        /// DropDownMinPrice control.
+        /// btnCreate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownMinPrice;
+        protected global::System.Web.UI.WebControls.Button btnCreate;
         
         /// <summary>
-        /// DropDownMaxPrice control.
+        /// btnEditDelete control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownMaxPrice;
-        
-        /// <summary>
-        /// DropDownRoom control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownRoom;
-        
-        /// <summary>
-        /// PropertyList control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ListView PropertyList;
+        protected global::System.Web.UI.WebControls.Button btnEditDelete;
     }
 }
