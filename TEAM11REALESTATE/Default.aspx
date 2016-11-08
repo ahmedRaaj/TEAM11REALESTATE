@@ -63,7 +63,7 @@
                                 <img src="/Images/Properties/Condo1.jpg" class="img-rounded" alt="Cinque Terre" width="250" height="200">
                             </td>
                             <td width="45%">
-                                <span style="font-weight:bold;font-size:large"><%# Item.ProperName %></span>
+                              <a href="PropertyDetails.aspx?PropertyID=<%# Item.PropertyID %>">  <span style="font-weight:bold;font-size:large"><%# Item.ProperName %></span> </a>
                                 <br />
                                 <%# Item.Address.StreetName + " " + Item.Address.PostalCode %>
                                 <br />
