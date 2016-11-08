@@ -7,27 +7,36 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace TEAM11REALESTATE {
+namespace TEAM11REALESTATE.SellerPages {
     
     
-    public partial class _Default {
+    public partial class SellerDeletePage {
         
         /// <summary>
-        /// DDPropertyType control.
+        /// GVDeleteSeller control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DDPropertyType;
+        protected global::System.Web.UI.WebControls.GridView GVDeleteSeller;
         
         /// <summary>
-        /// PropertyList control.
+        /// SellerDataSource control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListView PropertyList;
+        protected global::System.Web.UI.WebControls.SqlDataSource SellerDataSource;
+        
+        /// <summary>
+        /// btnMainPage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnMainPage;
     }
 }

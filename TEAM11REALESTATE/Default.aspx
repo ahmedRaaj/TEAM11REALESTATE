@@ -3,40 +3,92 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
     <div class="jumbotron">
-        <h1>&nbsp;</h1>
-        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
-        <p><a href="http://www.asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+      <table class="table">
+               <tr style="border:none">
+                   <td><span class="FilterTypeName" style="text-align: center;border:none;font-weight:bold">Property Type</span></td>
+                   <td><span class="FilterTypeName" style="text-align: center;border:none;font-weight:bold">Minimum Price</span></td>
+                   <td><span class="FilterTypeName" style="text-align: center;border:none;font-weight:bold">Maximum Price</span></td>
+                   <td><span class="FilterTypeName" style="text-align: center;border:none;font-weight:bold">Rooms</span></td>
+                   <td rowspan="2">
+                       <button type="button" class="btn btn-primary">SEARCH</button>
+                   </td>
+               </tr>
+
+
+          <tr style="border:none">
+               <td>
+                   <asp:DropDownList class="select" runat="server" ID="DDPropertyType" ItemType="TEAM11REALESTATE.Models.PropertyType" DataMember="PropertyTypeID" DataValueField="TypeName" SelectMethod="GetPropertyTypes">
+                       
+                   </asp:DropDownList>
+               </td>
+                 <td>
+                   <select class="select">
+                       <option>{PlaceHolder}</option>
+                   </select>
+               </td>
+                 <td>
+                   <select class="select">
+                       <option>{PlaceHolder}</option>
+                   </select>
+               </td>
+                 <td>
+                   <select class="select">
+                       <option>{PlaceHolder}</option>
+                   </select>
+               </td>
+               
+           </tr>
+       </table>
     </div>
 
     <div class="row">
-        <div class="col-md-4">
-            <h2>Getting started</h2>
-            <p>
-                ASP.NET Web Forms lets you build dynamic websites using a familiar drag-and-drop, event-driven model.
-            A design surface and hundreds of controls and components let you rapidly build sophisticated, powerful UI-driven sites with data access.
-            </p>
-            <p>
-                <a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301948">Learn more &raquo;</a>
-            </p>
-        </div>
-        <div class="col-md-4">
-            <h2>Get more libraries</h2>
-            <p>
-                NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.
-            </p>
-            <p>
-                <a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301949">Learn more &raquo;</a>
-            </p>
-        </div>
-        <div class="col-md-4">
-            <h2>Web Hosting</h2>
-            <p>
-                You can easily find a web hosting company that offers the right mix of features and price for your applications.
-            </p>
-            <p>
-                <a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301950">Learn more &raquo;</a>
-            </p>
-        </div>
+        <asp:ListView ID="PropertyList" runat="server" DataKeyNames="PropertyID"
+            ItemType="TEAM11REALESTATE.Models.Property" SelectMethod="GetProperties">
+            <EmptyDataTemplate>
+                <table class="table">
+                    <tr>
+                        <td>No data was returned.</td>
+                    </tr>
+                </table>
+            </EmptyDataTemplate>
+
+            <EmptyItemTemplate>
+                <td />
+            </EmptyItemTemplate>
+            <ItemTemplate>
+                <td runat="server">
+                    <table class="table">
+                        <tr>
+                            <td width="10%">
+                                <img src="/Images/Properties/Condo1.jpg" class="img-rounded" alt="Cinque Terre" width="250" height="200">
+                            </td>
+                            <td width="45%">
+                                <span style="font-weight:bold;font-size:large"><%# Item.ProperName %></span>
+                                <br />
+                                <%# Item.Address.StreetName + " " + Item.Address.PostalCode %>
+                                <br />
+                                <%# Item.PropertyType.TypeName %>
+                                <br />
+                                <%# Item.Rooms %>
+                                <br />
+                                <%# Item.Agent.SalesPersonName %>
+
+                            </td>
+                            <td width="45%">
+                               <span style="font-weight:bold;font-size:large"> <%# String.Format("{0:c}",Item.PricePSF*Item.SizePSF)  %></span>
+                                <br />
+                                <%# Item.PricePSF + " " + Item.Address.PostalCode %>
+                                <br />
+                                <%# Item.SizePSF %>
+                                <br />
+                                <%# Item.Description %>
+
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </ItemTemplate>
+        </asp:ListView>
     </div>
 
 </asp:Content>

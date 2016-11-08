@@ -48,5 +48,7 @@ namespace TEAM11REALESTATE.Models
         public virtual PropertyType PropertyType { get; set; }
 
         public virtual Seller Seller { get; set; }
+
+        public virtual ICollection<PropertyImage> PropertyImages { get; set; }
     }
 }
