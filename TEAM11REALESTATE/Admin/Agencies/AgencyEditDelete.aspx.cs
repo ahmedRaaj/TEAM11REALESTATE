@@ -13,15 +13,19 @@ namespace TEAM11REALESTATE.Agencies
         RealEstateModel context = new Models.RealEstateModel();
         protected void Page_Load(object sender, EventArgs e)
         {
-            Agency agnc = context.Agencies.Where(x => x.AgencyName.Equals(tbx_AgencyName.Text)).First();
-            tbx_AgencyName.Text = agnc.AgencyName;
-            tbx_UnitNumber.Text = agnc.Address.UnitNumber;
-            tbx_BlockNumber.Text = agnc.Address.BlockNumber;
-            tbx_StreetName.Text = agnc.Address.StreetName;
-            tbx_PostalCode.Text = agnc.Address.PostalCode;
-            tbx_Mobile.Text = agnc.Address.Mobile;
-            tbx_OfficePh.Text = agnc.Address.Phone;
-            tbx_Website.Text = agnc.Address.Website;
+            Agency agnc = context.Agencies.Where(x => x.AgencyName.Equals(tbx_AgencyName.Text)).FirstOrDefault();
+            if(agnc != null)
+            {
+                tbx_AgencyName.Text = agnc.AgencyName;
+                tbx_UnitNumber.Text = agnc.Address.UnitNumber;
+                tbx_BlockNumber.Text = agnc.Address.BlockNumber;
+                tbx_StreetName.Text = agnc.Address.StreetName;
+                tbx_PostalCode.Text = agnc.Address.PostalCode;
+                tbx_Mobile.Text = agnc.Address.Mobile;
+                tbx_OfficePh.Text = agnc.Address.Phone;
+                tbx_Website.Text = agnc.Address.Website;
+            }
+            
 
         }
 
