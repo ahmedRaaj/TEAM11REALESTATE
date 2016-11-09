@@ -193,7 +193,13 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Admin\Web.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Images\empity.svg.png" />
     <Content Include="Images\Properties\Condo1.jpg" />
+<<<<<<< HEAD
+    <Content Include="Images\upload-materials-icon-14769.png" />
+=======
+    <Content Include="Propertiespages\ModifyProperties.aspx" />
+>>>>>>> 8ebf27287395e69443a0ecc742269d8dcbdcb848
     <Content Include="PropertyDetails.aspx" />
     <Content Include="RealEState.sql" />
     <Content Include="Scripts\bootstrap.js" />
@@ -454,6 +460,13 @@
     <Compile Include="Models\RealEstateModel.cs" />
     <Compile Include="Models\Seller.cs" />
     <Compile Include="Models\sysdiagram.cs" />
+    <Compile Include="Propertiespages\ModifyProperties.aspx.cs">
+      <DependentUpon>ModifyProperties.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Propertiespages\ModifyProperties.aspx.designer.cs">
+      <DependentUpon>ModifyProperties.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PropertyDetails.aspx.cs">
       <DependentUpon>PropertyDetails.aspx</DependentUpon>
