@@ -7,7 +7,7 @@ DBCC CHECKIDENT(Districts, RESEED, 0)
 DBCC CHECKIDENT(Areas, RESEED, 0)
 DBCC CHECKIDENT(Sellers, RESEED, 0)
 DBCC CHECKIDENT(Properties, RESEED, 0)
-
+DBCC CHECKIDENT(PropertyImages, RESEED, 0)
 
 
 
@@ -345,8 +345,8 @@ values ('The Seawind', '2', '2016-08-12', 290, 1130, 'Facilities', 5, 5, 3, 5, 5
 insert into Properties (ProperName, Rooms, PropertyTopDate, PricePSF, SizePSF, Description, DistrictID, PropertyTypeID, AgentID, SellerID, AddressID, LeaseStartDate)
 values ('38 Jervois', '5', '2016-08-12', 250, 1230, 'Facilities', 6, 6, 2,5, 6, '2016-08-12')
 
---insert into Properties (ProperName, Rooms, PropertyTopDate, PricePSF, SizePSF, Description, DistrictID, PropertyTypeID, AgentID, SellerID, AddressID, LeaseStartDate)
---values ('The Meyerise', '7', '2016-08-12', 400, 1600, 'Facilities', 7, 6, 3, 7, 7, '2016-08-12')
+insert into Properties (ProperName, Rooms, PropertyTopDate, PricePSF, SizePSF, Description, DistrictID, PropertyTypeID, AgentID, SellerID, AddressID, LeaseStartDate)
+values ('The Meyerise', '7', '2016-08-12', 400, 1600, 'Facilities', 7, 6, 3, 7, 7, '2016-08-12')
 
 --insert into Properties (ProperName, Rooms, PropertyTopDate, PricePSF, SizePSF, Description, DistrictID, PropertyTypeID, AgentID, SellerID, AddressID, LeaseStartDate)
 --values ('Twin Peaks', '1', '2016-08-12', 230, 1030, 'Facilities', 8, 8, 4, 8, 8, '2016-08-12')
