@@ -62,7 +62,7 @@
                     <table class="table">
                         <tr>
                             <td width="10%">
-                                <img src="/Images/Properties/Condo1.jpg" class="img-rounded" alt="Cinque Terre" width="250" height="200">
+                                <asp:Image runat="server" ID="ImageProperty" ImageUrl="<%# Item.PropertyImageWithPath %>" Height="250" Width="200"/>
                             </td>
                             <td width="45%">
                               <a href="PropertyDetails.aspx?PropertyID=<%# Item.PropertyID %>">  <span style="font-weight:bold;font-size:large"><%# Item.ProperName %></span> </a>
