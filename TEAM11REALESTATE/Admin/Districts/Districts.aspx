@@ -26,7 +26,7 @@
     <br />
     <table style="width:100%;">
         <tr>
-            <td style="width: 120px">
+            <td style="width: 10%">
                 <asp:Label ID="lblAreaName" runat="server" Text="Area Names: " Font-Bold="True"></asp:Label>
             </td>
             <td colspan="5">
@@ -50,38 +50,40 @@
             </td>
         </tr>
         <tr>
-            <td style="width: 120px; height: 20px;"></td>
-            <td style="height: 20px; width: 156px"></td>
-            <td style="height: 20px" colspan="4"></td>
+            <td style="width: 10%; height: 9px;"></td>
+            <td style="height: 9px; width: 12%"></td>
+            <td style="height: 9px" colspan="4"></td>
         </tr>
         <tr>
-            <td style="width: 120px; height: 22px;">
+            <td style="width: 10%; height: 13px;">
                 <asp:Label ID="Label3" runat="server" Font-Bold="True" Text="New Area Name: "></asp:Label>
             </td>
-            <td style="height: 22px; width: 156px">
+            <td style="height: 13px; width: 12%">
                 <asp:TextBox ID="txtNewAreaName" runat="server"></asp:TextBox>
             </td>
-            <td style="height: 22px; width: 121px;" colspan="2">&nbsp;</td>
-            <td style="height: 22px" colspan="2">
-                &nbsp;</td>
+            <td style="height: 13px; " colspan="2"></td>
+            <td style="height: 13px" colspan="2">
+                </td>
         </tr>
         <tr>
-            <td style="width: 120px; height: 22px;">&nbsp;</td>
-            <td style="height: 22px; width: 156px">
+            <td style="width: 10%; height: 22px;">&nbsp;</td>
+            <td style="height: 22px; width: 12%">
                 <asp:Button ID="Button1" runat="server" Text="Insert New Area" Width="118px" OnClick="Button1_Click" />
             </td>
-            <td style="height: 22px; width: 58px;">
+            <td style="height: 22px; width: 8%;">
                 <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Delete Area" />
             </td>
-            <td style="height: 22px; width: 1006px;" colspan="2">
+            <td style="height: 22px; width: 58px;">
+                &nbsp;</td>
+            <td style="height: 22px; width: 1006px;">
                 <asp:Button ID="btnSaveArea" runat="server" OnClick="btnSaveArea_Click" style="margin-left: 0; margin-right: 0" Text="Save Area" />
             </td>
-            <td style="height: 22px">&nbsp;</td>
+            <td style="height: 22px; width: 1%;">&nbsp;</td>
         </tr>
         <tr>
-            <td style="width: 120px">
+            <td style="width: 10%">
                 &nbsp;</td>
-            <td style="width: 156px">
+            <td style="width: 12%">
                 &nbsp;</td>
             <td colspan="4">
                 &nbsp;</td>
