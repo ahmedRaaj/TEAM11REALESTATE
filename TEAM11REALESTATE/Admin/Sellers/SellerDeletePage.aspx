@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="SellerDeletePage.aspx.cs" Inherits="TEAM11REALESTATE.SellerPages.SellerDeletePage" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-        <asp:GridView ID="GVDeleteSeller" runat="server" AutoGenerateColumns="False" DataSourceID="SellerDataSource" DataKeyNames="SellerID">
+        <asp:GridView ID="GVDeleteSeller" class="table-condensed" runat="server" AutoGenerateColumns="False" DataSourceID="SellerDataSource" DataKeyNames="SellerID">
         <Columns>
             <asp:BoundField DataField="SellerID" HeaderText="SellerID" InsertVisible="False" ReadOnly="True" SortExpression="SellerID" />
             <asp:BoundField DataField="SellerName" HeaderText="SellerName" SortExpression="SellerName" />

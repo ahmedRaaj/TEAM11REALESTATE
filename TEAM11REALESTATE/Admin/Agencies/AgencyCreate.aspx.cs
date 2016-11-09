@@ -20,8 +20,7 @@ namespace TEAM11REALESTATE.Agencies
         {
             RealEstateModel context = new RealEstateModel();
 
-            try
-            {
+
                 Address addss = new Address();
                 addss.UnitNumber = tbx_UnitNumber.Text;
                 addss.BlockNumber = tbx_BlockNumber.Text;
@@ -55,11 +54,8 @@ namespace TEAM11REALESTATE.Agencies
 
                 context.Agencies.Add(agenc);
                 context.SaveChanges();
-            }
-            catch
-            {
 
-            }
+            Response.Redirect("AgencyMain.aspx");
         }
         
     }
