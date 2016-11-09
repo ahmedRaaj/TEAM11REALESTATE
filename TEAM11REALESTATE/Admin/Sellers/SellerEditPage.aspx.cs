@@ -18,7 +18,7 @@ namespace TEAM11REALESTATE.SellerPages
 
         protected void btnOk_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/SellerPages/SellerMainPage.aspx");
+            Response.Redirect("SellerMainPage.aspx");
         }
     }
 }
