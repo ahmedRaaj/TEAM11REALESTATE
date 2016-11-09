@@ -3,7 +3,7 @@
     <head>
    <br /><br /> <b><asp:Label ID="Label1" runat="server" Text="My Properties"></asp:Label></b>
    <br /><br /><b>
-    <asp:Button ID="Button1" runat="server" Text="Add Property" Width="249px" />
+    <asp:Button ID="Button1" runat="server" Text="Add Property" Width="249px" OnClick="Button1_Click" />
     <asp:Button ID="Button2" runat="server" Text="Modify Existing Properties" Width="249px" />
     </b></head>
 

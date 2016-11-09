@@ -112,5 +112,10 @@ namespace TEAM11REALESTATE.Propertiespages
         {
 
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Admin/Properties/CreateProperties.aspx");
+        }
     }
 }
