@@ -10,7 +10,7 @@
             <td style="height: 261px"></td>
             <td style="width: 828px; height: 261px">
                 <div>
-                    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" AutoGenerateEditButton="True" DataKeyNames="AgencyID" Width="984px">
+                    <asp:GridView ID="GridView1" class="table-condensed" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" AutoGenerateEditButton="True" DataKeyNames="AgencyID" Width="984px">
                         <Columns>
                             <asp:BoundField DataField="AgencyID" HeaderText="AgencyID" InsertVisible="False" ReadOnly="True" SortExpression="AgencyID" />
                             <asp:BoundField DataField="AgencyName" HeaderText="AgencyName" SortExpression="AgencyName" />
@@ -43,6 +43,7 @@
                         </UpdateParameters>
                     </asp:SqlDataSource>
                     <div>
+                        <br />
                         <asp:Button ID="btnOK" runat="server" Text="Ok" Height="40px" PostBackUrl="AgencyMain.aspx" Width="100px" />
                     </div>
                     <br />

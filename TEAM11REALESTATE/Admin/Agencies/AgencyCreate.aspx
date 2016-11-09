@@ -75,7 +75,7 @@
                 <asp:TextBox ID="tbx_Website" runat="server"></asp:TextBox> 
                 <br />
                     <br />
-                <asp:Button ID="btn_Save" runat="server" Text="Save" OnClick="btn_Save_Click" />
+                <asp:Button ID="btn_Save" runat="server" Text="Save" OnClick="btn_Save_Click" Height="40px" Width="100px" />
 
                 </div>
             </td>
