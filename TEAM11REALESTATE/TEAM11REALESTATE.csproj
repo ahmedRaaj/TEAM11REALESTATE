@@ -175,13 +175,11 @@
     <Content Include="Admin\AdminDefault.aspx" />
     <Content Include="Admin\Agencies\AgencyEditDel.aspx" />
     <Content Include="Admin\Agencies\AgencyMain.aspx" />
-    <Content Include="Admin\Agents.aspx" />
     <Content Include="Admin\Districts\Districts.aspx" />
-    <Content Include="Admin\Properties.aspx" />
-    <Content Include="Admin\Sellers.aspx" />
     <Content Include="Admin\Agencies\AgencyCreate.aspx" />
     <Content Include="Admin\Agencies\AgencyEditDelete.aspx" />
     <Content Include="Admin\Agents\AgentsView.aspx" />
+    <Content Include="Admin\Properties\CreateProperties.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap2.css" />
@@ -193,6 +191,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Account\Web.config" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Admin\Web.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Images\Properties\Condo1.jpg" />
     <Content Include="PropertyDetails.aspx" />
@@ -377,33 +376,12 @@
     <Compile Include="Admin\Agencies\AgencyMain.aspx.designer.cs">
       <DependentUpon>AgencyMain.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\Agents.aspx.cs">
-      <DependentUpon>Agents.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Admin\Agents.aspx.designer.cs">
-      <DependentUpon>Agents.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Admin\Districts\Districts.aspx.cs">
       <DependentUpon>Districts.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Admin\Districts\Districts.aspx.designer.cs">
       <DependentUpon>Districts.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\Properties.aspx.cs">
-      <DependentUpon>Properties.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Admin\Properties.aspx.designer.cs">
-      <DependentUpon>Properties.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\Sellers.aspx.cs">
-      <DependentUpon>Sellers.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Admin\Sellers.aspx.designer.cs">
-      <DependentUpon>Sellers.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\Agencies\AgencyCreate.aspx.cs">
       <DependentUpon>AgencyCreate.aspx</DependentUpon>
@@ -425,6 +403,13 @@
     </Compile>
     <Compile Include="Admin\Agents\AgentsView.aspx.designer.cs">
       <DependentUpon>AgentsView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Properties\CreateProperties.aspx.cs">
+      <DependentUpon>CreateProperties.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Properties\CreateProperties.aspx.designer.cs">
+      <DependentUpon>CreateProperties.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
@@ -454,6 +439,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Logic\RoleAction.cs" />
     <Compile Include="Logic\Util.cs" />
     <Compile Include="Models\Address.cs" />
     <Compile Include="Models\Agency.cs" />

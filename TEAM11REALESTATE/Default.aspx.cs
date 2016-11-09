@@ -17,6 +17,8 @@ namespace TEAM11REALESTATE
             //RealEstateModel ct = new RealEstateModel();
             //LBPropertyType.DataSource = ct.PropertyTypes;
             //LBPropertyType.DataBind();
+           
+          
         }
 
         // The return type can be changed to IEnumerable, however to support

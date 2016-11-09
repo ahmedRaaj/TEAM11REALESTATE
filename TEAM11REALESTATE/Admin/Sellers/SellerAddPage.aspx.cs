@@ -64,14 +64,14 @@ namespace TEAM11REALESTATE.SellerPages
             con.Close();
 
 
-            Response.Redirect("~/SellerPages/SellerMainPage.aspx");
+            Response.Redirect("SellerMainPage.aspx");
         }
 
 
 
         protected void MainPage_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/SellerPages/SellerMainPage.aspx");
+            Response.Redirect("SellerMainPage.aspx");
         }
     }
 }

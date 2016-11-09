@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="SellerMainPage.aspx.cs" Inherits="TEAM11REALESTATE.Seller.SellerMainPage" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <asp:GridView ID="GVSellerList" runat="server" AutoGenerateColumns="False" DataSourceID="SellerDataSource">
+    <asp:GridView  ID="GVSellerList" class="table-condensed" runat="server" AutoGenerateColumns="False" DataSourceID="SellerDataSource">
         <Columns>
             <asp:BoundField DataField="SellerName" HeaderText="SellerName" SortExpression="SellerName" />
             <asp:BoundField DataField="UnitNumber" HeaderText="UnitNumber" SortExpression="UnitNumber" />

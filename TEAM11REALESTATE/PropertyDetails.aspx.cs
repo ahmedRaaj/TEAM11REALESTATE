@@ -11,6 +11,7 @@ namespace TEAM11REALESTATE
 {
     public partial class PropertyDetails : System.Web.UI.Page
     {
+        private int? propertyID = null;
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -24,11 +25,24 @@ namespace TEAM11REALESTATE
             IQueryable<Property> q = db.Properties;
             if(id.HasValue && id > 0)
             {
+                propertyID = id  ;
                 q = q.Where(p => p.PropertyID == id);
             }
             else
             {
                 q = null;
+            }
+            return q;
+        }
+
+        public IEnumerable<TEAM11REALESTATE.Models.PropertyImage> RepeaterPropertyImages_GetData()
+        {
+            var db = new RealEstateModel();
+            IQueryable<PropertyImage> q = null;
+            if (propertyID.HasValue)
+            {
+               // int temp = (int)propertyID;
+               q = db.PropertyImages.Where(i => i.PropertyID == (int)propertyID);
             }
             return q;
         }

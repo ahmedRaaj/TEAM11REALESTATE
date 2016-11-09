@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AgentsView.aspx.cs" Inherits="TEAM11REALESTATE.Agents.AgentsView" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 <h3 style="text-align:center">MANAGE AGENTS</h3>
-    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" AutoGenerateEditButton="True" DataKeyNames="AgentID" DataSourceID="SqlDataSource1" Width="722px" >
+    <asp:GridView ID="GridView1" class="table-condensed" runat="server" AutoGenerateColumns="False" AutoGenerateEditButton="True" DataKeyNames="AgentID" DataSourceID="SqlDataSource1" Width="722px" >
         <Columns>
             <asp:BoundField DataField="AgentID" HeaderText="AgentID" InsertVisible="False" ReadOnly="True" SortExpression="AgentID" />
             <asp:BoundField DataField="CEANumber" HeaderText="CEANumber" SortExpression="CEANumber" />
@@ -12,8 +12,11 @@
             <asp:BoundField DataField="ProfilePicture" HeaderText="ProfilePicture" SortExpression="ProfilePicture" />
         </Columns>
     </asp:GridView>
+    <br />
+    <asp:Label ID="Label10" runat="server" Text="Add an Agent:" Font-Bold="True" Font-Size="Medium"></asp:Label>
+    <br />
     <br />   
-    <table style="width: 100%; height: 90px;">
+    <table>
         <tr>
             <td style="width: 214px">
                 <asp:Label ID="Label1" runat="server" Text="CEANumber"></asp:Label>
