@@ -50,5 +50,27 @@ namespace TEAM11REALESTATE.Models
         public virtual Seller Seller { get; set; }
 
         public virtual ICollection<PropertyImage> PropertyImages { get; set; }
+        
+        public string PropertyImageWithPath
+        {
+            private set { }
+            get
+            {
+                if (PropertyImages != null)
+                {
+                    PropertyImage fstImg = new PropertyImage();
+                    foreach (PropertyImage firstImage in PropertyImages)
+                    {
+                        fstImg = firstImage;
+                        break;
+                    }
+                    return fstImg.GetPropertyImageWithPath();
+                }else
+                {
+                    return "~/Images/noimage.jpg";
+                }
+            }
+              //  return "~/Images/Agents/" + "1.jpg";
+            }
+        }
     }
-}
