@@ -1,13 +1,16 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ModifyProperties.aspx.cs" Inherits="TEAM11REALESTATE.Propertiespages.ModifyProperties" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <head>
-   <br /><br /> <b><asp:Label ID="Label1" runat="server" Text="My Properties"></asp:Label></b>
+   <br /><br /> 
    <br /><br /><b>
-    <asp:Button ID="Button1" runat="server" Text="Add Property" Width="249px" />
-    <asp:Button ID="Button2" runat="server" Text="Modify Existing Properties" Width="249px" />
     </b></head>
 
     <br /><br />
+    <a href="CreateProperties.aspx"> <button type="button" class="btn btn-primary">Create Property</button> </a>
+    <br />
+     <br />
+     <br />
+    <b><asp:Label ID="Label1" runat="server" Text="My Properties"></asp:Label></b>
     <b><asp:Label ID="Label3" runat="server" Text="Choose Property to Edit"></asp:Label></b>
 
     <br /><br />

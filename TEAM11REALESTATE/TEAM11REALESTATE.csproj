@@ -180,6 +180,7 @@
     <Content Include="Admin\Agencies\AgencyEditDelete.aspx" />
     <Content Include="Admin\Agents\AgentsView.aspx" />
     <Content Include="Admin\Properties\CreateProperties.aspx" />
+    <Content Include="Admin\Properties\ModifyProperties.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap2.css" />
@@ -220,7 +221,6 @@
     <Content Include="Images\Properties\8.jpg" />
     <Content Include="Images\Properties\9.jpg" />
     <Content Include="Images\upload-materials-icon-14769.png" />
-    <Content Include="Propertiespages\ModifyProperties.aspx" />
     <Content Include="PropertyDetails.aspx" />
     <Content Include="RealEState.sql" />
     <Content Include="Scripts\bootstrap.js" />
@@ -438,6 +438,13 @@
     <Compile Include="Admin\Properties\CreateProperties.aspx.designer.cs">
       <DependentUpon>CreateProperties.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\Properties\ModifyProperties.aspx.cs">
+      <DependentUpon>ModifyProperties.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Properties\ModifyProperties.aspx.designer.cs">
+      <DependentUpon>ModifyProperties.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
@@ -481,13 +488,6 @@
     <Compile Include="Models\RealEstateModel.cs" />
     <Compile Include="Models\Seller.cs" />
     <Compile Include="Models\sysdiagram.cs" />
-    <Compile Include="Propertiespages\ModifyProperties.aspx.cs">
-      <DependentUpon>ModifyProperties.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Propertiespages\ModifyProperties.aspx.designer.cs">
-      <DependentUpon>ModifyProperties.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PropertyDetails.aspx.cs">
       <DependentUpon>PropertyDetails.aspx</DependentUpon>

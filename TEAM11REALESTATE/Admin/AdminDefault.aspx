@@ -6,7 +6,7 @@
 
        <a href="Districts/Districts.aspx"> <b>Manage Districts |</b></a>
        <a href="Sellers/SellerMainPage.aspx"> <b>Manage Sellers |</b></a>
-       <a href="Properties/CreateProperties.aspx"> <b>Manage Properties |</b></a>
+       <a href="Properties/ModifyProperties.aspx"> <b>Manage Properties |</b></a>
 
     </div>
 
