@@ -194,7 +194,9 @@
     <Content Include="Account\Web.config" />
     <Content Include="Content\bootstrap.min.css" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Images\empity.svg.png" />
     <Content Include="Images\Properties\Condo1.jpg" />
+    <Content Include="Images\upload-materials-icon-14769.png" />
     <Content Include="PropertyDetails.aspx" />
     <Content Include="RealEState.sql" />
     <Content Include="Scripts\bootstrap.js" />
