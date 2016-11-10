@@ -6,7 +6,8 @@ DBCC CHECKIDENT(Agents, RESEED, 0)
 DBCC CHECKIDENT(Districts, RESEED, 0)
 DBCC CHECKIDENT(Areas, RESEED, 0)
 DBCC CHECKIDENT(Sellers, RESEED, 0)
-
+DBCC CHECKIDENT(Properties, RESEED, 0)
+DBCC CHECKIDENT(PropertyImages, RESEED, 0)
 
 
 
@@ -336,10 +337,10 @@ insert into Properties (ProperName, Rooms, PropertyTopDate, PricePSF, SizePSF, D
 values ('The Morris Residences', '4', '2016-08-12', 270, 1190, 'Facilities', 3, 3, 4, 3, 3, '2016-08-12')
 
 insert into Properties (ProperName, Rooms, PropertyTopDate, PricePSF, SizePSF, Description, DistrictID, PropertyTypeID, AgentID, SellerID, AddressID, LeaseStartDate)
-values ('Lake Grande', '5', '2016-08-12', 320, 1400, 'Facilities', 4, 4, 5, 4, 4, '2016-08-12')
+values ('Lake Grande', '5', '2016-08-12', 320, 1400, 'Facilities', 4, 4, 3, 4, 4, '2016-08-12')
 
 insert into Properties (ProperName, Rooms, PropertyTopDate, PricePSF, SizePSF, Description, DistrictID, PropertyTypeID, AgentID, SellerID, AddressID, LeaseStartDate)
-values ('The Seawind', '2', '2016-08-12', 290, 1130, 'Facilities', 5, 5, 5, 5, 5, '2016-08-12')
+values ('The Seawind', '2', '2016-08-12', 290, 1130, 'Facilities', 5, 5, 3, 5, 5, '2016-08-12')
 
 insert into Properties (ProperName, Rooms, PropertyTopDate, PricePSF, SizePSF, Description, DistrictID, PropertyTypeID, AgentID, SellerID, AddressID, LeaseStartDate)
 values ('38 Jervois', '5', '2016-08-12', 250, 1230, 'Facilities', 6, 6, 2,5, 6, '2016-08-12')
@@ -347,12 +348,29 @@ values ('38 Jervois', '5', '2016-08-12', 250, 1230, 'Facilities', 6, 6, 2,5, 6, 
 insert into Properties (ProperName, Rooms, PropertyTopDate, PricePSF, SizePSF, Description, DistrictID, PropertyTypeID, AgentID, SellerID, AddressID, LeaseStartDate)
 values ('The Meyerise', '7', '2016-08-12', 400, 1600, 'Facilities', 7, 6, 3, 7, 7, '2016-08-12')
 
-insert into Properties (ProperName, Rooms, PropertyTopDate, PricePSF, SizePSF, Description, DistrictID, PropertyTypeID, AgentID, SellerID, AddressID, LeaseStartDate)
-values ('Twin Peaks', '1', '2016-08-12', 230, 1030, 'Facilities', 8, 8, 4, 8, 8, '2016-08-12')
+--insert into Properties (ProperName, Rooms, PropertyTopDate, PricePSF, SizePSF, Description, DistrictID, PropertyTypeID, AgentID, SellerID, AddressID, LeaseStartDate)
+--values ('Twin Peaks', '1', '2016-08-12', 230, 1030, 'Facilities', 8, 8, 4, 8, 8, '2016-08-12')
 
-insert into Properties (ProperName, Rooms, PropertyTopDate, PricePSF, SizePSF, Description, DistrictID, PropertyTypeID, AgentID, SellerID, AddressID, LeaseStartDate)
-values ('Sky Vue', '5', '2016-08-12', 340, 1400, 'Facilities', 9, 9, 4, 9, 9, '2016-08-12')
-
-
+--insert into Properties (ProperName, Rooms, PropertyTopDate, PricePSF, SizePSF, Description, DistrictID, PropertyTypeID, AgentID, SellerID, AddressID, LeaseStartDate)
+--values ('Sky Vue', '5', '2016-08-12', 340, 1400, 'Facilities', 9, 9, 4, 9, 9, '2016-08-12')
 
 
+
+
+insert into PropertyImages values('1.jpg',1);
+insert into PropertyImages values('2.jpg',1);
+insert into PropertyImages values('3.jpg',1);
+insert into PropertyImages values('4.jpg',2);
+insert into PropertyImages values('5.jpg',2);
+insert into PropertyImages values('6.jpg',3);
+insert into PropertyImages values('7.jpg',3);
+insert into PropertyImages values('8.jpg',4);
+insert into PropertyImages values('9.jpg',4);
+insert into PropertyImages values('10.jpg',5);
+insert into PropertyImages values('11.jpg',5);
+insert into PropertyImages values('12.jpg',6);
+insert into PropertyImages values('13.jpg',6);
+insert into PropertyImages values('14.jpg',6);
+insert into PropertyImages values('15.jpg',7);
+insert into PropertyImages values('16.jpg',7);
+insert into PropertyImages values('17.jpg',7);

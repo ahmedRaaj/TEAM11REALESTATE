@@ -31,19 +31,42 @@ namespace TEAM11REALESTATE.Admin
                 ddlDistrictCode.Items.Insert(0, new ListItem(string.Empty, string.Empty));
                 ddlDistrictCode.SelectedIndex = 0;
             }
+
+            btnDeleteDistrict.Enabled = false;
+            btnFindAreas.Enabled = false;
+            Button1.Enabled = false;
+            Button2.Enabled = false;
         }
 
         protected void ddlDistrictCode_SelectedIndexChanged(object sender, EventArgs e)
         {
-            District district = model.Districts.Where(x => x.DistrictCode == ddlDistrictCode.Text).FirstOrDefault<District>();
+            if (ddlDistrictCode.SelectedIndex != 0)
+            {
+                District district = model.Districts.Where(x => x.DistrictCode == ddlDistrictCode.Text).FirstOrDefault<District>();
 
-            txtDistrictCode.Text = district.DistrictCode;
-            txtDistrictName.Text = district.DistrictName;
-            txtDistrictName.DataBind();
+                txtDistrictCode.Text = district.DistrictCode;
+                txtDistrictName.Text = district.DistrictName;
+                txtDistrictName.DataBind();
 
-            grvAreas.DataSource = null;
-            grvAreas.DataBind();
+                grvAreas.DataSource = null;
+                grvAreas.DataBind();
 
+                btnDeleteDistrict.Enabled = true;
+                btnSaveDistrict.Enabled = true;
+                btnFindAreas.Enabled = true;
+            }
+            else
+            {
+                txtDistrictCode.Text = "";
+                txtDistrictName.Text = "";
+
+                btnDeleteDistrict.Enabled = false;
+                btnSaveDistrict.Enabled = false;
+                btnFindAreas.Enabled = false;
+                Button1.Enabled = false;
+                Button2.Enabled = false;
+
+            }
         }
 
         protected void btnSaveDistrict_Click(object sender, EventArgs e)
@@ -56,6 +79,7 @@ namespace TEAM11REALESTATE.Admin
 
                 district.DistrictCode = txtDistrictCode.Text;
                 district.DistrictName = txtDistrictName.Text;
+
                 model.SaveChanges();
             }
             else
@@ -95,6 +119,8 @@ namespace TEAM11REALESTATE.Admin
             txtDistrictCode.Text = "";
             txtDistrictName.Text = "";
             txtDistrictCode.Focus();
+
+            btnSaveDistrict.Enabled = true;
         }
 
         protected void btnDeleteDistrict_Click(object sender, EventArgs e)
@@ -126,6 +152,12 @@ namespace TEAM11REALESTATE.Admin
 
                 grvAreas.DataSource = model.Areas.Where(x => x.DistrictID == districtID).OrderBy(x => x.AreaName).Select(x=>x).ToList();
                 grvAreas.DataBind();
+
+                btnFindAreas.Enabled = true;
+                btnSaveDistrict.Enabled = true;
+                btnDeleteDistrict.Enabled = true;
+                Button1.Enabled = true;
+                Button2.Enabled = true;
             }
             else
             {
@@ -135,12 +167,8 @@ namespace TEAM11REALESTATE.Admin
             }
         }
 
-        protected void btnSaveArea_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        protected void Button1_Click(object sender, EventArgs e)
+        //Insert New Area - when 'Insert New Area' Button is clicked
+        protected void Button1_Click(object sender, EventArgs e)  
         {
             if ((txtNewAreaName.Text == null) || (txtNewAreaName.Text == ""))
             {
@@ -162,14 +190,24 @@ namespace TEAM11REALESTATE.Admin
 
                 grvAreas.DataSource = model.Areas.Where(x => x.DistrictID == districtID).OrderBy(x => x.AreaName).Select(x => x).ToList();
                 grvAreas.DataBind();
+                btnFindAreas.Enabled = true;
+                btnSaveDistrict.Enabled = true;
+                btnDeleteDistrict.Enabled = true;
+                Button1.Enabled = true;
+                Button2.Enabled = true;
             }
         }
 
         protected void grvAreas_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            btnFindAreas.Enabled = true;
+            btnSaveDistrict.Enabled = true;
+            btnDeleteDistrict.Enabled = true;
+            Button1.Enabled = true;
+            Button2.Enabled = true;
         }
 
+        //Delete Area - when 'Delete Area' Button is clicked
         protected void Button2_Click(object sender, EventArgs e)
         {
             if (grvAreas.SelectedIndex == 0)
@@ -190,9 +228,34 @@ namespace TEAM11REALESTATE.Admin
 
                 District district = model.Districts.Where(x => x.DistrictCode == ddlDistrictCode.Text).FirstOrDefault();
                 int districtID = district.DistrictID;
-                grvAreas.DataSource = model.Areas.Where(x => x.DistrictID == districtID).OrderBy(x => x.AreaName).Select(x => x).ToList();
-                grvAreas.DataBind();
+                var areaAvail = model.Areas.Where(x => x.DistrictID == districtID).FirstOrDefault();
+
+                if (areaAvail != null)
+                {
+                    grvAreas.DataSource = model.Areas.Where(x => x.DistrictID == districtID).OrderBy(x => x.AreaName).Select(x => x).ToList();
+                    grvAreas.DataBind();
+                }
+                else
+                {
+                    grvAreas.DataSource = null;
+                    grvAreas.DataBind();
+                }
             }
+        }
+
+        protected void txtDistrictCode_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void txtDistrictName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void txtNewAreaName_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

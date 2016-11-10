@@ -7,180 +7,144 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace TEAM11REALESTATE.Admin {
+namespace TEAM11REALESTATE.Admin.Properties {
     
     
-    public partial class Districts {
+    public partial class CreateProperties {
         
         /// <summary>
-        /// Label2 control.
+        /// txtPropertyName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
+        protected global::System.Web.UI.WebControls.TextBox txtPropertyName;
         
         /// <summary>
-        /// lblSelectDistCode control.
+        /// txtUnitNumber control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblSelectDistCode;
+        protected global::System.Web.UI.WebControls.TextBox txtUnitNumber;
         
         /// <summary>
-        /// ddlDistrictCode control.
+        /// txtBlockNumber control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlDistrictCode;
+        protected global::System.Web.UI.WebControls.TextBox txtBlockNumber;
         
         /// <summary>
-        /// lblDistrictCode control.
+        /// txtStreetName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblDistrictCode;
+        protected global::System.Web.UI.WebControls.TextBox txtStreetName;
         
         /// <summary>
-        /// txtDistrictCode control.
+        /// txtPostCode control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtDistrictCode;
+        protected global::System.Web.UI.WebControls.TextBox txtPostCode;
         
         /// <summary>
-        /// RequiredFieldValidator1 control.
+        /// ddlDistrict control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
+        protected global::System.Web.UI.WebControls.DropDownList ddlDistrict;
         
         /// <summary>
-        /// lblDistrictName control.
+        /// txtPricePSF control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblDistrictName;
+        protected global::System.Web.UI.WebControls.TextBox txtPricePSF;
         
         /// <summary>
-        /// txtDistrictName control.
+        /// txtSizePSF control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtDistrictName;
+        protected global::System.Web.UI.WebControls.TextBox txtSizePSF;
         
         /// <summary>
-        /// RequiredFieldValidator2 control.
+        /// txtRooms control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
+        protected global::System.Web.UI.WebControls.TextBox txtRooms;
         
         /// <summary>
-        /// btnSaveDistrict control.
+        /// ddlPropertyType control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSaveDistrict;
+        protected global::System.Web.UI.WebControls.DropDownList ddlPropertyType;
         
         /// <summary>
-        /// btnInsertDistrict control.
+        /// ddlSeller control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnInsertDistrict;
+        protected global::System.Web.UI.WebControls.DropDownList ddlSeller;
         
         /// <summary>
-        /// btnDeleteDistrict control.
+        /// ddlAgent control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnDeleteDistrict;
+        protected global::System.Web.UI.WebControls.DropDownList ddlAgent;
         
         /// <summary>
-        /// btnFindAreas control.
+        /// txtaDescription control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnFindAreas;
+        protected global::System.Web.UI.WebControls.TextBox txtaDescription;
         
         /// <summary>
-        /// lblAreaName control.
+        /// FileUpload1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblAreaName;
+        protected global::System.Web.UI.WebControls.FileUpload FileUpload1;
         
         /// <summary>
-        /// grvAreas control.
+        /// btnSubmitPropery control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView grvAreas;
-        
-        /// <summary>
-        /// Label3 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label3;
-        
-        /// <summary>
-        /// txtNewAreaName control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtNewAreaName;
-        
-        /// <summary>
-        /// Button1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
-        
-        /// <summary>
-        /// Button2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button2;
+        protected global::System.Web.UI.WebControls.Button btnSubmitPropery;
     }
 }

@@ -7,6 +7,7 @@ using System.Web.Optimization;
 using System.Web.Routing;
 using System.Web.Security;
 using System.Web.SessionState;
+using TEAM11REALESTATE.Logic;
 using TEAM11REALESTATE.Models;
 namespace TEAM11REALESTATE
 {
@@ -18,6 +19,8 @@ namespace TEAM11REALESTATE
             // Code that runs on application startup
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+           // RoleAction role = new RoleAction();
+           // role.CreateAdmin();
         }
     }
 }
